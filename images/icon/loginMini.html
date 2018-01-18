@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<script>
+	var domain = {
+		main : "http://www.bl.com",
+		help : "http://help.bl.com",
+		passport : "https://passport.bl.com",
+		reg : "https://reg.bl.com",
+		my : "https://my.bl.com",
+		cart : "http://cart.bl.com",
+		fashion : "http://fashion.bl.com",
+		life : "http://life.bl.com",
+		product : "http://product.bl.com",
+		search : "http://search.bl.com",
+		qiang : "http://qiang.bl.com",
+		tuan : "http://tuan.bl.com",
+		order : "http://channel.bl.com",
+		js : "//res12.iblimg.com/respc-1",
+		image : "//res12.iblimg.com/respc-1",
+		chongzhi : "http://chongzhi.bl.com",
+		jiaofei : "http://jiaofei.bl.com",
+		coupon : "http://coupon.bl.com",
+		trade : "http://trade.bl.com",
+		promotion : "http://promotion.bl.com",
+		payment : "https://payment.bl.com",
+		cookie: ".bl.com",
+		dc1: "http://dc1.bl.com",
+		dt1: "http://dt1.bl.com",
+		httpsImg : "https://res12.iblimg.com/respc-1",
+		safe : "https://safe.bl.com",
+		s: "http://s.bl.com",
+		global : "http://global.bl.com",
+		dc2: "http://dc2.bl.com"
+	};
+
+	var jsonPageInfo = {
+		"pageId" : "",
+		"categoryId" : "",
+		"searchTerm" : "",
+		"searchResult" : "",
+		"exportAttributes" : ""
+	};
+	var pageInfoJson = '';
+	if (!(pageInfoJson == '' || pageInfoJson == null || pageInfoJson == undefined)) {
+		jsonPageInfo = eval("(" + pageInfoJson + ")");
+	}
+</script><html  lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+	<title>用户登录</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+	<meta name="renderer" content="webkit">
+	<meta name="keywords" content="关键词">
+	<meta name="description" content="描述"> 
+    <link rel="stylesheet" type="text/css" href="https://res14.iblimg.com/respc-1/resources/v3.0/css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="https://res15.iblimg.com/respc-1/resources/v4.1/css/sidebar_login.css">
+    <link rel="stylesheet" type="text/css" href="https://res12.iblimg.com/respc-1/resources/v3.0/css/ui/button.css"  >
+    <link rel="stylesheet" type="text/css" href="https://res13.iblimg.com/respc-1/resources/v3.0/css/ui/input.css"  >
+</head>
+<body style="background: #f2f2f2;">
+    <div class="login-detail">
+    	<form id="formlogin" onsubmit="return false;" method="post">
+	        <div class="logintitle">
+	            <div class="fl">会员登录</div>
+	            <div class="fr"><a id="register" href="javascript:void(0);">注册新账号</a></div>
+	        </div>
+	        <ul class="ul-item">
+	            <li><div class="error_con">请输入用户名</div></li>
+	            <li><div class="error_con">请输入密码</div></li>
+	            <li><div class="error_con">请输入验证码</div></li>
+	            <li><div class="error_con">密码输入错误账号 <strong>已被锁定</strong> ！您可以在 <strong>1小时</strong> 后重新测试</div></li>
+	            <li style="display:none;"><div id="login_error_msg" class="error_con error_iconbg">账号名 或 密码不正确，请重新输入！</div></li>
+	        	<li style="display:none;" id="capital"><div class="error_con">键盘大写锁定已打开，请注意大小写！</div></li>
+	        </ul>
+	        <div class="input_warp">
+	            <img class="clear_con" src="https://res14.iblimg.com/respc-1/resources/v3.0/css/i/empty.png">
+	            <input id="loginId" type="text" placeholder="用户名/手机号/邮箱" class="inp inp-primary inp-primaryclick username" name="username"/>
+	        </div>
+	        <div class="input_warp">
+	            <input id="password" type="password" class="inp inp-primary inp-primaryclick pwd" placeholder="密码" />
+	        </div>
+	        <div class="input_warp bknone verification" style="display: none;">
+	            <div class="fleft">
+	            	<img src="https://res15.iblimg.com/respc-1/resources/v3.0/css/i/empty.png" class="clear_con" style="display: none;">
+	                <input id="verifyCode" type="text" maxlength="4" placeholder="请输入验证码" class="inp inp-primary inp-primaryclick codename" name="codename"/>
+	            </div>
+	            <div class="fright">
+	            	<img id="verifyCodeImg" style="cursor: pointer;" src="">
+	            </div>
+	        </div>
+	        <div class="forget">
+	        	<a href="javascript:;">忘记密码？</a>
+	        </div>
+	        <button id="loginsubmit" class="btn btn-primary submit">登 录</button>
+	        <div class="other-login">
+	        	<div class="other-login-bottom">
+	            	<span>其他账号联合登录</span>
+	            </div>
+	        </div>
+	        <div class="login-logo">
+	            <div>
+	            	<a id="ecp" class="other_login1" href="javascript:void(0);"></a>
+	                <a id="blemall" class="other_login2" href="javascript:void(0);"></a>
+	                <a id="yg" class="other_login3" href="javascript:void(0);"></a>
+	                <a id="ay" class="other_login4" href="http://www.anyolife.com/control/partner?partner=bailian" target="_blank"></a>
+	            	<a id="ok" class="other_login5" href="http://www.anyolife.com/control/partner?partner=bailian" target="_blank"></a>
+	            </div>
+	        </div>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="https://res12.iblimg.com/respc-1/resources/v4.2/unit/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="https://res13.iblimg.com/respc-1/resources/v4.2/unit/bl.js?version=1514300616081"></script>
+<script type="text/javascript" src="https://res14.iblimg.com/respc-1/resources/v4.2/unit/jsbn.js"></script>
+<script type="text/javascript" src="https://res15.iblimg.com/respc-1/resources/v4.2/unit/prng4.js"></script>
+<script type="text/javascript" src="https://res12.iblimg.com/respc-1/resources/v4.2/unit/rng.js"></script>
+<script type="text/javascript" src="https://res13.iblimg.com/respc-1/resources/v4.2/unit/rsa.js"></script>
+<script type="text/javascript" src="https://res14.iblimg.com/respc-1/resources/v4.2/unit/rsabase64.js"></script>
+<script type="text/javascript" src="https://res15.iblimg.com/respc-1/resources/v4.2/unit/jquery-capslock.js"></script>
+<script type="text/javascript" src="https://res12.iblimg.com/respc-1/resources/v4.2/js/coremetrics/eluminate.js?version=1514300616081"></script>
+<script type="text/javascript" src="https://res13.iblimg.com/respc-1/resources/v4.2/unit/jquery-capslock.js"></script>
+<script type="text/javascript" src="https://res14.iblimg.com/respc-1/resources/v3.0/js/user/loginMini.js?version=1514300616081"></script>
+<script type="text/javascript" src="https://res15.iblimg.com/respc-1/resources/v4.2/js/coremetrics/pageInit.js?version=1514300616081"></script>
+</html>
