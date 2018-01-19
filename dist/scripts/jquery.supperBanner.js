@@ -26,7 +26,6 @@
 
 		//默认参数;
 		var defaults = {
-			src:[],
 			create_btn:true,
 			movement_mode:"fade",
 			autoplay:false
@@ -37,27 +36,19 @@
 		var next = 0; //下一张图片;
 		var out = 0;
 
-		function Banner(opts,ele){
-			this.init(opts,ele)
+		function Banner(opts){
+			
 		}
 		Banner.prototype = {
 			constructor:Banner,
-			init:function(opts,ele){
-				// 参数判断;
-				// 让 opt 一定为大于1项的数组;
-				if(!(opts instanceof Object) || opts==undefined || opts == "string"){
-					throw "请输入正确的配置参数，要求配置参数为Object类型";
-				} 
-				if(!(opts.src instanceof Array)){
-					throw "请输入正确的src配置,src必须为大于1项的数组";
-				}
-				//参数合并;
-				this.opts = $.extend(defaults,opts);
-				this.ele = ele;
+			init:function(opts){
+				
+				this.ele=opts.find("img");
+				this.opts = opts;
 				this.callme = "";
 				this.rendring_pag();
-				//console.log(this.$ul,this.$btn_box);
-				this.$btn_box.children().on("mouseenter",$.proxy(this.moveTo,this))
+				
+				//this.$btn_box.on("mouseenter",$.proxy(this.moveTo,this))
 				/*
 					{
 						"mosueover":function(){},
@@ -85,74 +76,44 @@
 				$btn.addClass("supperbanner_active")
 				.siblings()
 				.removeClass("supperbanner_active");
-				switch(this.opts.movement_mode){
-					case "fade":this.fade();break;
-					case "slide":this.slide();break;
-					case "scroll":this.scroll();break;
-				}
+				
+				this.fade();
+					
 			},
 			rendring_pag:function(){
 				//和forEach一样;
-				this.$ul = $("<ul></ul>");
+				
 				//装按钮的盒子;
 				var $btn_box = $("<div></div>");
-				this.$ul.addClass("supperbanner_img_contants");
+				
 				$btn_box.addClass("supperbanner_btn_wrap");
-				var _this = this;
-				$.each(this.opts.src,function(index,src){
-					var $li = $("<li></li>")
-					var $img = $("<img>")
-					$img.attr("src",src);
-					$li.append($img);
-					_this.$ul.append($li);
+				
+				$.each(this.opts,function(index,src){
 					//按钮；
 					var $span = $("<span></span>");
 					//$span.html(index);
 					$btn_box.append($span);
 				})
-				//console.log($ul[0]);
-				this.ele.append(this.$ul);
-				this.ele.append($btn_box);
-
-				this.$btn_box = $btn_box;
-				this.$btn_box.children().eq(index).addClass("supperbanner_active")
+				//console.log($ul[0])
 
 				this.reset_ele();//结构结束 =>初始化样式;
 			},
 			reset_ele:function(){
 				//初始化样式;
 				var $ele = this.ele;
-				var $ul = this.ele.find(".supperbanner_img_contants");
-				var $li = $ul.find("li");
+
 				var $width = $ele.width(); //当前元素的
 				var $height = $ele.height(); //当前元素的
 				$ele.css({
 					position:"relative",
-					overflow:"hidden"
-				})
-				$li.css({
+					overflow:"hidden",
 					width:$width,
 					height:$height
 				})
-				$li.find("img").css({
-					width:$width,
-					height:$height,
-				})
+				
 				//根据不同的动画执行不同的初始化样式方法;
-				if(this.opts.movement_mode == "scroll"){
-					// $ul.width( $width * $li.length);
-					// $li.css({
-					// 	float:"left"
-					// })
-					$li.css({
-						position:"absolute",
-						top:-$li.height()
-					})
-					$li.eq(0).css({
-						top:0
-					})
-
-				}else if(this.opts.movement_mode == "fade" || this.opts.movement_mode == "slide"){
+				
+				if(this.opts.movement_mode == "fade"){
 					$ul.width($width)
 					$li.width($width)
 					$li.css({
@@ -182,37 +143,11 @@
 				.siblings().stop()
 				.fadeOut()
 			},
-			slide:function(){
-				this.$ul.children().eq(index)
-				.stop()
-				.slideDown()
-				.siblings().stop()
-				.slideUp()
-			},
-			scroll:function(){
-				var $li = this.$ul.children();
-				
-				$li.eq(index).css({
-					top:-$li.height(),
-					zIndex:1
-				}).stop(true).animate({
-					top:0
-				})
-
-				$li.eq(out).css({
-					top:0
-				}).animate({
-					top:$li.height()
-				})
-
-				// this.$ul.animate({
-				// 	marginLeft:-this.$ul.children().eq(0).width() * index
-				// })
-			},
+			
 			autoplay:function(){
 				var _this = this;
 				this.timer = setInterval(function(){
-					if(index == _this.$ul.children().length - 1){
+					if(index == _this.opts - 1){
 						index = 0;
 					}else{
 						index++;
@@ -238,33 +173,7 @@
 			}
 
 		}
-		$.fn.extend({
-			supperBanner:function(opts){
-				return new Banner(opts,this);
-			}
-		})
-	/*console.log(`%c
-	 　　　　　　　 ┏┓　　  ┏┓
-	 　　　　　　　┏┛┻━━━━━┛┻┓
-	 　　　　　　　┃　　　　　　┃ 　
-	 　　　　　　　┃　　　━　　 ┃
-	 　　　　　　　┃　＞　　＜　 ┃
-	 　　　　　　　┃　　　　　　 ┃
-	 　　　　　　　┃... ⌒ ... ┃
-	 　　　　　　　┃　　　　　　┃
-	 　　　　　　　┗━┓　　　┏━┛
-	 　　　　　　　　 ┃　　　┃　 Code is far away from bug with the animal protecting　　　　　　　　　　
-	 　　　　　　　　 ┃　　　┃   神兽保佑,代码无bug
-	 　　　　　　　　 ┃　　　┃　　　　　　　　　　　
-	 　　　　　　　　 ┃　　　┃  　　　　　　
-	 　　　　　　　　 ┃　　　┃
-	 　　　　　　　　 ┃　　　┃　　　　　　　　　　　
-	 　　　　　　　　 ┃　　　┗━━━┓
-	 　　　　　　　　 ┃　　　　　　　┣┓
-	 　　　　　　　　 ┃　　　　　　　┏┛
-	 　　　　　　　　 ┗┓┓┏━┳┓┏┛
-	 　　　　　　　　　┃┫┫　┃┫┫
-	 　　　　　　　　　┗┻┛　┗┻┛
-			`,"color:rgba(0,0,0,.5);");*/
+		return new Banner();
+
 }))
 	

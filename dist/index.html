@@ -6,6 +6,38 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
+
+	<!-- ***********Suspension bar*********** -->
+
+	<div id="suspensionbar">
+		<div class="wrap">
+			<div class="bar-left">
+				<div class="flienavtitle">全部分类</div>
+				<div class="flienavicon"></div>
+			</div>
+			<div class="file-head-logo"><a href="#javascript">
+				<img src="../images/icon/logo-1.png"></a>
+			</div>
+			<div class="bar-search">
+				
+			</div>
+			<div id="fileheader_not_login" class="file-head-info">
+				<a href="https://passport.bl.com/loginDisplay.html">登录</a>
+					<span>|</span>
+				<a href="https://reg.bl.com/regist.html">注册</a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
 	<!-- ***********topnav*********** -->
 	<div id="topnav">
 		<div class="topnav">
@@ -1597,31 +1629,355 @@
      	</div>
     </div>
 
-	<!-- *****************************right-slidebar**************************** -->
+	<!-- ********************right-slidebar-end************************* -->
+	<!-- ********************banner************************* -->
 	<div id="banner">
 		<div class="banner_center">
 			<div class="rollbanner">
 				
 			</div>
 		</div>
+		
+		<!-- ***********banner右边白框************** -->
+
+		<div class="banner-recommend">
+        	<div class="banner-recommend_bg"></div>
+        	<div class="ban_tit0">
+            	<div class="ban_tit0_d1">
+                	<div class="ban_tit_tx">
+                    	<div class="ban_tit_txd">Hi，<span id="memberName">欢迎来到i百联</span><br>
+                        	<p class="blogin_a">
+                            	<a href="#javascript">登录</a>
+                            	<a href="#javascript">注册</a>
+                            	<span id="memberDetail"></span>
+                            	<a id="getCoupon" href="#javascript"></a>
+                        	</p>
+                    	</div>
+                    	<a href="#javascript">
+                        	<img id="personAvatar" src="images/icon/userpic001.png" width="46" height="46">
+                    	</a>
+                	</div>
+                	<input type="hidden" id="isLogin" value="false" autocomplete="off">
+                	<div class="ban_txta">
+                    	<a href="#javascript" class="tipa" id="benefits">新人领取100元大礼包！</a>
+                	</div>
+            	</div>
+        	</div>
+        	<div class="ban_tit1">
+            	<a href="#javascript" class="ban_more">更多&gt;</a>
+            	<ol class="ban_qnew">
+                	<li><a href="#javascript"><span>[速抢]</span>心愿清单最高满300减100</a></li>
+                    <li><a href="#javascript"><span>[限时]</span>购年货满300减100起</a></li>
+                    <li><a href="#javascript"><span>[速抢]</span>iPhoneX该抢了！</a></li>
+                </ol>
+        	</div>
+        	<div class="ban_tit2">
+            	<div class="ban_tit2_cov">
+                	<div class="ban_cov_x"></div>
+                	<div class="ban_tit2_btn" style="display: none;">
+                    	<a href="#javascript" class="ban_tit2_a1">充话费</a>
+                    	<a href="#javascript" class="ban_tit2_a1">充流量</a>
+                	</div>
+                	<div class="ban_tit2_btn" href="#javascript" class="ban_tit2_a2">
+	                	<a href="#javascript" class="ban_tit2_a2">水费</a>
+	                    <a href="#javascript" class="ban_tit2_a2">电费</a>
+	                    <a href="#javascript" class="ban_tit2_a2">燃气费</a>
+                	</div>
+                	<div class="ban_tit2_btn" href="#javascript" class="ban_tit2_a1">
+	                	<a href="#javascript" class="ban_tit2_a1">充游戏</a>
+	                    <a href="#javascript" class="ban_tit2_a1">充Q币</a>
+	                </div>
+	                <ol class="ban_tit2_ol">
+	                    <li><a href="#javascript">固话</a></li>
+	                    <li><a href="#javascript">车险</a></li>
+	                    <li><a href="#javascript">游戏中心</a></li>
+	                    <li><a href="#javascript">影音生活</a></li>
+	                    <li><a href="#javascript">违章办理</a></li>
+	                    <li><a href="#javascript">礼品卡</a></li>
+	                </ol>
+            </div>
+
+<!--**.life_i1 {
+    	background: url(../images/icon/life_i1.png) no-repeat 0 0;
+    		}
+		相同的class名对应相同的图片名  
+		鼠标划过时 上下+-28px
+    	-->
+
+            <ul class="ban_life">
+                <li >
+                    <a href="#javascript">
+                        <div class="life_i life_i1"></div>
+                        <span>手机充值</span>
+                    </a>
+                </li>
+                <li >
+                    <a href="#javascript">
+                        <div class="life_i life_i2"></div>
+                        <span>水电煤</span>
+                    </a>
+                </li>
+                <li >
+                    <a href="#javascript">
+                        <div class="life_i life_i3"></div>
+                        <span>充值游戏</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#javascript">
+                        <div class="life_i life_i4"></div>
+                        <span>固话</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#javascript">
+                        <div class="life_i life_i5"></div>
+                        <span>车险</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#javascript">
+                        <div class="life_i life_i6"></div>
+                        <span>游戏中心</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#javascript">
+                        <div class="life_i life_i7"></div>
+                        <span>影音生活</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#javascript">
+                        <div class="life_i life_i8"></div>
+                        <span>违章办理</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#javascript">
+                        <div class="life_i life_i9"></div>
+                        <span>礼品卡</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+		
+
+
+		<!-- ***********banner右边白框-end************** -->
+
+	
+	</div>
+
+	<!-- ********************banner-end************************* -->
+	<!-- ********************value group************************ -->
+<!-- 未完成！！！ -->
+<!-- 特效：当点击.new_czt_next时  让ul向左移动965px 且按钮隐藏 .new_czt_prev显示-->
+<!-- 特效：当点击.new_czt_prev时  让ul向右移动965px 且按钮隐藏 .new_czt_next显示-->
+	<div id="valuegroup">
+		<div class="valuegroup">
+			
+		</div>
+	</div>
+
+	<!-- ********************meetlater************************ -->
+	<div id="meetlater">
+		<div class="meetlater">
+			
+		</div>
+	</div>
+<!--特效：将下面内容添加到.new_tm_l里-->
+<!-- <ol class="progress-bar-ol" style="width: 126px; visibility: visible;">
+		<li class="listyle">
+			<a class="li-a-process" style="width: 0%; overflow: hidden;"></a>
+		</li>
+		<li class="listyle">
+			<a class="li-a-process" style="width: 0%; overflow: hidden;"></a>
+			
+		</li>
+		<li class="listyle">
+			<a class="li-a-process" style="width: 12.2739%; overflow: hidden;"></a>
+		</li>
+	</ol> -->
+	
+<!--*****************************floor********************************** -->
+
+	   <!-- ********************floor1************************ -->
+
+	<div id="floor1" class="floor">
+		
+	</div>
+	
+	<!-- ********************floor2************************ -->
+
+	<div id="floor2" class="floor">
+		
+	</div>
+
+	<!-- ********************floor3************************ -->
+
+	<div id="floor3" class="floor">
+		
+	</div>
+
+	<!-- ********************floor4************************ -->
+
+	<div id="floor4" class="floor">
+		
+	</div>
+
+	<!-- ********************floor5************************ -->
+
+	<div id="floor5" class="floor">
+		
+	</div>
+
+	<!-- ********************floor6************************ -->
+
+	<div id="floor6" class="floor">
+		
+	</div>
+
+	<!-- ********************floor7************************ -->
+
+	<div id="floor7" class="floor">
+		
+	</div>
+
+	<!-- ********************floor8************************ -->
+
+	<div id="floor8" class="floor">
+		
+	</div>
+
+	<!-- ********************floor5************************ -->
+
+	<div id="floor5" class="floor">
+		
+	</div>
+
+<!--***********************floor-end*************************** -->	
+
+<!--***********************stairs*************************** -->
+<div id="stairs">
+	
+</div>	
+
+
+<!--***********************stairs-end*************************** -->
+
+<!--*****************************gauss-Like********************************** -->
+<div id="gausslike">
+	
+</div>
+
+<!--***********************footer*************************** -->
+<div id="footer">
+
+	<!--*****************footer-top********************* -->
+	<div class="footer-top clear">
+		<div class="wrap">
+			<div class="helpnav-list">
+                <div class="helpnav-title">
+                    <i class="footic1"></i>
+                  新手入门
+              	</div>
+                <ul>
+                     <li><a href="#javascript">购物流程</a></li>
+                     <li><a href="#javascript">会员介绍</a></li>
+                     <li><a href="#javascript">常见问题</a></li>
+                     <li><a href="#javascript">发票说明</a></li>
+                     <li><a href="#javascript">联系客服</a></li>
+                </ul>
+            </div>
+            <div class="helpnav-list">
+                <div class="helpnav-title">
+                    <i class="footic2"></i>
+                    配送服务
+                </div>
+                <ul>
+                    <li><a href="#javascript">配送范围及运费</a></li>
+                    <li><a href="#javascript">配送进度查询</a></li>
+                    <li><a href="#javascript">自提服务</a></li>
+                    <li><a href="#javascript">商品验货与签收</a></li>
+                </ul>
+            </div>
+            <div class="helpnav-list">
+                <div class="helpnav-title">
+                    <i class="footic3"></i>
+                    支付方式
+                </div>
+                <ul>
+                    <li><a href="#javascript">货到付款</a></li>
+                    <li><a href="#javascript">在线支付</a></li>
+                </ul>
+            </div>
+            <div class="helpnav-list">
+                <div class="helpnav-title">
+                    <i class="footic4"></i>
+                    售后服务
+                </div>
+                <ul>
+                     <li><a href="#javascript">退换货政策</a></li>
+                     <li><a href="#javascript">退换货流程</a></li>
+                     <li><a href="#javascript">退款说明</a></li>
+                </ul>
+            </div>
+            <div class="helpnav-list">
+                <div class="helpnav-title">
+                    <i class="footic5"></i>
+                    商家支持
+                </div>
+                <ul>
+					<li><a href="#javascript">商家入驻</a></li>
+                    <li><a href="#javascript">商家规则</a></li>
+                    <li><a href="#javascript">商家常见问题</a></li>
+                </ul>
+            </div>
+		</div>
+	</div>
+
+	<!--*****************footer-bottom********************* -->
+	<div class="footer-bottom clear">
+		<div>
+            <a href="#javascript">关于我们</a>
+            <span>|</span>
+            <a href="#javascript">联系我们</a>
+            <span>|</span>
+            <a href="#javascript">加盟合作</a>
+            <span>|</span>
+            <a href="#javascript">诚征英才</a>
+            <span>|</span>
+            <a href="#javascript">友情链接</a>
+		</div>
+	    <div class="copyright">百联集团有限公司旗下 上海百联全渠道电子商务有限公司版权所有 <span>|</span>  客服电话：400-900-8800  <span>|</span> 沪ICP备15028847号
+	    </div>
+	        
+	    <a href="#javascript" style="color: #666;">互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044</a>
+	    <div class="police">
+	        <a href="#javascript">
+	        	<img src="images/icon/gongan.png">
+	            <span style="">沪公网安备  31010102002366号</span>
+	        </a>
+	        <a href="#javascript">
+	            <img src="images/icon/wangjing.png">
+	            <span style="">网购大家评</span>
+	        </a>
+	        <a href="#javascript">
+	            <img src="images/icon/gongs.png" width="20" height="21">
+	            <span style="">上海工商</span>
+	        </a>
+	        <a href="#javascript">
+	            <img src="images/icon/zhizhao.png">
+	            <span style="">经营执照</span>
+	        </a>
+	    </div>
 	</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
 
 </body>
