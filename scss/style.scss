@@ -36,6 +36,10 @@
 			    font-size: 20px;
 			    background: #fff url(../images/icon/filenavicon-1.png) no-repeat center 7px;
 			    color: #bbb;
+			    
+			}
+			&:hover .flienavicon {
+			    background: #151515 url(../images/icon/filenavicon-2.png) no-repeat center 7px;
 			}
 		}
 		.file-head-logo {
@@ -57,6 +61,9 @@
 		    line-height: 70px;
 		    font-family: 'Microsoft YaHei';
 		    font-size: 15px;
+		    a:hover{
+		    	color: #ff6f6f;
+		    }
 
 		    span {
 			    padding: 0 10px;
@@ -326,6 +333,7 @@
 				    li{
 				    	height: 29px;
     					line-height: 29px;
+    					padding-left: 16px;
     					i{
     						float: left;
 						    width: 16px;
@@ -700,10 +708,12 @@
 			    height: 121px;
 			    display: none;
 			    position: absolute;
+			    //position: relative;
 			    left: 0;
 			    bottom: -1px;
 			    background: #fff;
 			    .ban_cov_x {
+			    	z-index: 99999;
 				    width: 8px;
 				    height: 8px;
 				    position: absolute;
@@ -717,6 +727,7 @@
 				    width: 205px;
 				    padding: 0 5px;
 				    height: 59px;
+				    position: absolute;
 				    display: none;
 				    .ban_tit2_a1{
 					    width: 86px;
@@ -729,6 +740,10 @@
 					    color: #ff6f6f;
 					    border: 1px solid #ffbcbc;
 					    border-radius: 1px;
+					    &:hover{
+					    	background: #ff6f6f;
+					    	color: #fff;
+					    }
 					}
 					.ban_tit2_a2{
 					    width: 53px;
@@ -741,6 +756,10 @@
 					    color: #ff6f6f;
 					    border: 1px solid #ffbcbc;
 					    border-radius: 1px;
+					    &:hover{
+					    	background: #ff6f6f;
+					    	color: #fff;
+					    }
 					}
 
 				}
@@ -757,6 +776,9 @@
 					    float: left;
 					    border-top: 1px solid #eee;
 					    border-right: 1px solid #eee;
+					    &:hover a{
+					    	color:#ff6f6f;
+					    }
 					}
 				}
 			}
@@ -783,13 +805,15 @@
 						span {
 						    display: block;
 						    margin-top: -2px;
-						    &:hover{
+						    
+						     
+						} 
+						&:hover span{
 						    	color: #ff6f6f;
-						    }
 						}
-						.life_i2 {
-						    background: url(../images/icon/life_i2.png) no-repeat 0 0;
-						}
+
+						
+						
 					}
 				}
 
@@ -819,6 +843,31 @@
     	margin: 0 auto;
     	.new_czt_l {
 		    float: left;
+		    a{
+		    	display:block;
+		    	height: 250px;
+		    	width: 224px;
+		    	position: relative;
+		    	overflow: hidden;
+		    	img{
+		    		
+		    		height: 250px;
+		    		width: 224px;
+		    		
+		    		transition:all 1s;
+		    		
+		    			
+		    			
+		    		}
+		    		&:hover img{
+		    			height: 260px;
+		    			width: 234px;
+		    			transform:translateX(-5px);
+		    			transform:translateY(-5px);
+		    			transition:all 1s;
+		    	}
+
+		    }
 		}
 		.new_czt_r {
 		    width: 965px;
@@ -864,6 +913,12 @@
 					    height: 227px;
 					    width: 140px;
 					    padding: 0 10px;
+						a{
+							display: block;
+							height: 140px;
+							width: 140px;
+						}
+
 					    .new_czt_name {
 						    height: 40px;
 						    line-height: 20px;
@@ -871,11 +926,11 @@
 						    margin-top: 0;
 						    a{
 						    	color: #333;
+						    	
 						    	&:hover{
 						    		text-decoration: underline;
 						    	}
 						    }
-
 						}
 						.money {
 						    color: #ff6f6f;
@@ -1153,7 +1208,6 @@
 	    text-align: right;
 	    margin-bottom: 14px;
 	    font-size: 14px;
-	    font-family: '微软雅黑';
 	    color: #999;
 	    padding-right: 5px;
 	    a {
@@ -1183,6 +1237,9 @@
 				    line-height: 21px;
 				    height: 42px;
 				    overflow: hidden;
+				    a:hover{
+				    	text-decoration: underline;
+				    }
 				}
 				.pro-money {
 				    padding: 0 11px;
@@ -1214,7 +1271,6 @@
 			}
 		}
 	}
-
 }
 
 

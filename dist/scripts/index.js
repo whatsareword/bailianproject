@@ -1,5 +1,5 @@
 require(["scripts/config.js"],function(){
-	require(["jquery","biglist","hotwords","underhotwords","supperBanner"],function($,bigList,hots,underhots,supperbanner){
+	require(["jquery","biglist","hotwords","underhotwords","supperBanner","bannerRight","valueGroup","picMagnify"],function($,bigList,hots,underhots,supperbanner,bannerright,vagroup,picmagnify){
 
 		
 		$(".left-biglist-show .menu_floor ").find("a").attr("href","goodslist.html");
@@ -36,19 +36,14 @@ require(["scripts/config.js"],function(){
 		// 	$("#ad-top").remove();
 		// })
 
-		// twinav.init();
+		
 		let url1="http://dc2.bl.com/js/mdata/banner.html?callback=?&_=1515850451286";
 			$.getJSON(url1,function(res){
-				
 				$(".rollbanner").html(res.message);
 				$(".rollbanner li").find("a").attr("href","#javascript");
-				
-					
 				supperbanner.init($(".rollbanner").find('li'))
-				
-			
-			
 		});
+
 
 		// 超值团	
 		var url2="http://dc2.bl.com/js/mdata/group.html?callback=?&_=1515850988758";
@@ -56,13 +51,24 @@ require(["scripts/config.js"],function(){
 				//console.log(res.message)
 				$(".valuegroup").html(res.message);
 				$(".valuegroup").find("a").attr("href","#javascript");
+				vagroup.init($(".new_czt_next"));
+				
+				
+				picmagnify.init($(".new_czt_show").find("img"));
+
 			})
+			
+			
+
+
 		//详见恨晚
 			let url3="http://dc2.bl.com/js/mdata/featuredChannel.html?callback=?&_=1515851077642";
 			$.getJSON(url3,function(res){
 				//console.log(res.message)
 				$(".meetlater").html(res.message);
 				$(".meetlater").find("a").attr("href","#javascript");
+				$("new_tm_r").find("img").attr("class","picbig");
+				picmagnify.init($(".picbig"));
 			})
 
 		//floor
@@ -96,8 +102,24 @@ require(["scripts/config.js"],function(){
 				 $("#gausslike").find("a").attr("href","#javascript");
 			})
 
+		//banner右边
+		/*.life_i1 {
+    	background: url(../images/icon/life_i1.png) no-repeat 0 0;
+    		}
+		相同的class名对应相同的图片名  
+		鼠标划过时 上下+-28px*/
+		let $ali = $(".ban_life").find('li')
+		let lifenameArr =[];
+		for(var i = 1; i < $ali.length+1 ;i++){
+			let lifeName ="life_i" + i;
+			lifenameArr.push(lifeName);
 
+		}
+		bannerright.init($ali,lifenameArr);
 
+		//$(".ban_life").find('li').on("mouseenter",bannerright2.init())
+		
+		
 
 
 

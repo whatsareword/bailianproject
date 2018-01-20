@@ -6,10 +6,13 @@ requirejs.config({
 		"hotwords":"scripts/hotwords",
 		"underhotwords":"scripts/underhotwords",
 		"supperBanner":"scripts/jquery.supperBanner",
+		"bannerRight":"scripts/banner-right",
+		"valueGroup":"scripts/value-group",
+		"picMagnify":"scripts/picmagnify",
 		"Pop":"scripts/pop",
 		"loadLi":"scripts/loadli",
-		"shoppingCar":"scripts/shoppingcar",
-		"twiceNav":"scripts/twicenav"
+		"shoppingCar":"scripts/shoppingcar"
+		
 
 	}
 })

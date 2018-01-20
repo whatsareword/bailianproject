@@ -477,6 +477,8 @@ body {
         font-size: 20px;
         background: #fff url(../images/icon/filenavicon-1.png) no-repeat center 7px;
         color: #bbb; }
+      #suspensionbar .wrap .bar-left:hover .flienavicon {
+        background: #151515 url(../images/icon/filenavicon-2.png) no-repeat center 7px; }
     #suspensionbar .wrap .file-head-logo {
       float: left;
       margin-top: 9px;
@@ -493,6 +495,8 @@ body {
       line-height: 70px;
       font-family: 'Microsoft YaHei';
       font-size: 15px; }
+      #suspensionbar .wrap .file-head-info a:hover {
+        color: #ff6f6f; }
       #suspensionbar .wrap .file-head-info span {
         padding: 0 10px;
         font-size: 12px; }
@@ -717,7 +721,8 @@ body {
           padding: 11px 0 9px; }
           #nav .nav .navleft .show-nav .banner-itemleft li {
             height: 29px;
-            line-height: 29px; }
+            line-height: 29px;
+            padding-left: 16px; }
             #nav .nav .navleft .show-nav .banner-itemleft li i {
               float: left;
               width: 16px;
@@ -1029,6 +1034,7 @@ body {
         bottom: -1px;
         background: #fff; }
         #banner .banner-recommend .ban_tit2 .ban_tit2_cov .ban_cov_x {
+          z-index: 99999;
           width: 8px;
           height: 8px;
           position: absolute;
@@ -1040,6 +1046,7 @@ body {
           width: 205px;
           padding: 0 5px;
           height: 59px;
+          position: absolute;
           display: none; }
           #banner .banner-recommend .ban_tit2 .ban_tit2_cov .ban_tit2_btn .ban_tit2_a1 {
             width: 86px;
@@ -1052,6 +1059,9 @@ body {
             color: #ff6f6f;
             border: 1px solid #ffbcbc;
             border-radius: 1px; }
+            #banner .banner-recommend .ban_tit2 .ban_tit2_cov .ban_tit2_btn .ban_tit2_a1:hover {
+              background: #ff6f6f;
+              color: #fff; }
           #banner .banner-recommend .ban_tit2 .ban_tit2_cov .ban_tit2_btn .ban_tit2_a2 {
             width: 53px;
             height: 24px;
@@ -1063,6 +1073,9 @@ body {
             color: #ff6f6f;
             border: 1px solid #ffbcbc;
             border-radius: 1px; }
+            #banner .banner-recommend .ban_tit2 .ban_tit2_cov .ban_tit2_btn .ban_tit2_a2:hover {
+              background: #ff6f6f;
+              color: #fff; }
         #banner .banner-recommend .ban_tit2 .ban_tit2_cov .ban_tit2_ol {
           width: 216px;
           position: absolute;
@@ -1076,6 +1089,8 @@ body {
             float: left;
             border-top: 1px solid #eee;
             border-right: 1px solid #eee; }
+            #banner .banner-recommend .ban_tit2 .ban_tit2_cov .ban_tit2_ol li:hover a {
+              color: #ff6f6f; }
       #banner .banner-recommend .ban_tit2 .ban_life {
         margin: 0 auto;
         overflow: hidden;
@@ -1097,10 +1112,8 @@ body {
           #banner .banner-recommend .ban_tit2 .ban_life li span {
             display: block;
             margin-top: -2px; }
-            #banner .banner-recommend .ban_tit2 .ban_life li span:hover {
-              color: #ff6f6f; }
-          #banner .banner-recommend .ban_tit2 .ban_life li .life_i2 {
-            background: url(../images/icon/life_i2.png) no-repeat 0 0; }
+          #banner .banner-recommend .ban_tit2 .ban_life li:hover span {
+            color: #ff6f6f; }
 
 /**************************valve group*************************/
 #valuegroup {
@@ -1114,6 +1127,22 @@ body {
     margin: 0 auto; }
     #valuegroup .valuegroup .new_czt_l {
       float: left; }
+      #valuegroup .valuegroup .new_czt_l a {
+        display: block;
+        height: 250px;
+        width: 224px;
+        position: relative;
+        overflow: hidden; }
+        #valuegroup .valuegroup .new_czt_l a img {
+          height: 250px;
+          width: 224px;
+          transition: all 1s; }
+        #valuegroup .valuegroup .new_czt_l a:hover img {
+          height: 260px;
+          width: 234px;
+          transform: translateX(-5px);
+          transform: translateY(-5px);
+          transition: all 1s; }
     #valuegroup .valuegroup .new_czt_r {
       width: 965px;
       height: 248px;
@@ -1155,6 +1184,10 @@ body {
             height: 227px;
             width: 140px;
             padding: 0 10px; }
+            #valuegroup .valuegroup .new_czt_r ul li .new_czt_show a {
+              display: block;
+              height: 140px;
+              width: 140px; }
             #valuegroup .valuegroup .new_czt_r ul li .new_czt_show .new_czt_name {
               height: 40px;
               line-height: 20px;
@@ -1381,7 +1414,6 @@ body {
     text-align: right;
     margin-bottom: 14px;
     font-size: 14px;
-    font-family: '微软雅黑';
     color: #999;
     padding-right: 5px; }
     #gausslike .featured_log a {
@@ -1409,6 +1441,8 @@ body {
           line-height: 21px;
           height: 42px;
           overflow: hidden; }
+          #gausslike .like_class li .pro-show .pro-name a:hover {
+            text-decoration: underline; }
         #gausslike .like_class li .pro-show .pro-money {
           padding: 0 11px;
           height: 26px;
