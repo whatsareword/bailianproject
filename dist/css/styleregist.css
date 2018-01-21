@@ -444,3 +444,155 @@ body {
           line-height: 20px;
           margin: 0 0 0 5px;
           color: #999; }
+
+body {
+  background: #f9f9f8; }
+
+#header-height {
+  width: 950px;
+  margin: 0 auto;
+  height: 110px; }
+  #header-height .header-logo {
+    float: left;
+    margin-top: 29px; }
+
+#mainbody {
+  width: 950px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #e1dfda; }
+  #mainbody .center-top {
+    height: 30px;
+    border-bottom: 1px solid #e1dfda;
+    padding: 10px 20px;
+    line-height: 30px; }
+    #mainbody .center-top .title-info {
+      float: left;
+      font-size: 16px;
+      color: #ff002a; }
+    #mainbody .center-top .title-login {
+      font-size: 12px;
+      float: right;
+      font-family: 'Microsoft YaHei';
+      color: #63625d; }
+      #mainbody .center-top .title-login a {
+        color: #0088cc; }
+  #mainbody .center-bottom {
+    padding: 50px 0px 74px 191px; }
+    #mainbody .center-bottom .loginPerfect-data {
+      padding: 10px 0px;
+      width: 759px;
+      height: 36px; }
+      #mainbody .center-bottom .loginPerfect-data .name {
+        float: left;
+        font-size: 15px;
+        color: #333333;
+        width: 136px;
+        text-align: right;
+        line-height: 36px; }
+        #mainbody .center-bottom .loginPerfect-data .name i {
+          color: #df3d36; }
+      #mainbody .center-bottom .loginPerfect-data .loginPerfect-input-div {
+        float: left;
+        padding-left: 5px;
+        display: inline; }
+        #mainbody .center-bottom .loginPerfect-data .loginPerfect-input-div .loginPerfect-input {
+          position: relative; }
+          #mainbody .center-bottom .loginPerfect-data .loginPerfect-input-div .loginPerfect-input input {
+            width: 258px;
+            line-height: 34px;
+            font-size: 16px;
+            vertical-align: middle;
+            padding: 0 10px 0 30px;
+            text-indent: 0px;
+            font-size: 12px;
+            color: #000;
+            border: 1px solid #cccccc; }
+            #mainbody .center-bottom .loginPerfect-data .loginPerfect-input-div .loginPerfect-input input:hover {
+              box-shadow: 0px 0px 3px #cccccc; }
+          #mainbody .center-bottom .loginPerfect-data .loginPerfect-input-div .loginPerfect-input .index-1 {
+            background: #ffffff url(../images/imgregist/register.png) no-repeat 10px 9px; }
+          #mainbody .center-bottom .loginPerfect-data .loginPerfect-input-div .loginPerfect-input .index-4, #mainbody .center-bottom .loginPerfect-data .loginPerfect-input-div .loginPerfect-input .index-3 {
+            width: 258px;
+            background: #ffffff url(../images/imgregist/register.png) no-repeat 10px -52px; }
+          #mainbody .center-bottom .loginPerfect-data .loginPerfect-input-div .loginPerfect-input .index-2 {
+            width: 258px;
+            background: #ffffff url(../images/imgregist/register.png) no-repeat 10px -180px; }
+          #mainbody .center-bottom .loginPerfect-data .loginPerfect-input-div .loginPerfect-input .index-5 {
+            width: 258px;
+            background: #ffffff url(../images/imgregist/register.png) no-repeat 10px -287px; }
+          #mainbody .center-bottom .loginPerfect-data .loginPerfect-input-div .loginPerfect-input .inp-short {
+            width: 158px; }
+      #mainbody .center-bottom .loginPerfect-data .register-code {
+        float: left;
+        width: 90px;
+        height: 36px;
+        margin: 0 11px 0 10px; }
+        #mainbody .center-bottom .loginPerfect-data .register-code img {
+          width: 90px;
+          height: 36px; }
+      #mainbody .center-bottom .loginPerfect-data .ftx23 {
+        float: left;
+        height: 36px;
+        line-height: 36px;
+        color: #706e69; }
+        #mainbody .center-bottom .loginPerfect-data .ftx23 a {
+          color: #0084cc;
+          text-decoration: underline; }
+      #mainbody .center-bottom .loginPerfect-data .input-prompt {
+        float: left;
+        line-height: 36px;
+        margin-left: 10px;
+        color: #999999; }
+        #mainbody .center-bottom .loginPerfect-data .input-prompt button {
+          width: 90px;
+          height: 36px;
+          border: 1px solid #c8c8c8;
+          background: #f5f5f5;
+          cursor: pointer; }
+    #mainbody .center-bottom .loginPerfect-remember {
+      height: 25px;
+      padding-left: 140px;
+      line-height: 18px;
+      overflow: hidden;
+      padding-top: 5px;
+      color: #666666;
+      background: #fff;
+      font-size: 12px; }
+      #mainbody .center-bottom .loginPerfect-remember label {
+        float: left;
+        cursor: pointer;
+        outline: none;
+        padding-right: 10px; }
+        #mainbody .center-bottom .loginPerfect-remember label .chickbox {
+          display: inline-block;
+          float: left;
+          border: 1px solid #55779b;
+          margin-top: 4px; }
+        #mainbody .center-bottom .loginPerfect-remember label span {
+          float: left;
+          margin-left: 15px;
+          display: inline;
+          font-family: 'Microsoft YaHei'; }
+      #mainbody .center-bottom .loginPerfect-remember a {
+        color: #0088ca !important;
+        float: left; }
+    #mainbody .center-bottom .registered .register-button {
+      padding-left: 134px;
+      height: 36px;
+      overflow: hidden; }
+
+.footer {
+  min-width: 950px;
+  margin: 0px auto;
+  clear: both;
+  margin-top: 0px !important;
+  padding-top: 20px !important;
+  background: url(../images/imgregist/login-bottom-bg.png) no-repeat top; }
+  .footer .bottom-nav {
+    line-height: 24px;
+    text-align: center;
+    padding-top: 10px;
+    color: #cccccc; }
+    .footer .bottom-nav span {
+      padding: 0px 10px; }

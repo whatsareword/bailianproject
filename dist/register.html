@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/styleregist.css"/>
+</head>
+<body>
+
+<!-- ***************************header************************* -->
+	<div id="header-height">
+	    <div class="wrap">
+	        <div class="header-logo">
+	        	<div class="fl"><a href="index.html"><img src="images/imgregist/logon-logo.png"></a></div>
+	            <div class="fl"><img src="images/imgregist/V3login-font4.png"></div>
+	        </div>
+	    </div>
+	</div>
+	
+	<div id="mainbody">
+		<div class="center-top">
+            <div class="title-info">您好，感谢您加入i百联</div>
+            <div class="title-login">如有账号，请点击 <a href="javascript:;">登录</a></div>
+        </div>
+        <div class="center-bottom">
+        	<div class="register">
+        		<div class="loginPerfect-data">
+                    <div class="name"><i>* </i>用户名：</div>
+                    <div class="loginPerfect-input-div">
+                        <div class="loginPerfect-input">
+                            <input name="loginId" id="loginId" class="index-1 inp inp-primaryclick inp-primary" maxlength="15" type="text" placeholder="6-20位字符，支持字母或字母与数字组合">
+                        </div>
+                    </div>
+					<!--焦点时 input***border: 2px solid #7fcbfe;
+						错误时 input*** border: 2px solid #f77799;
+						webkit-box-shadow: 0px 0px 3px #f77799;
+					<ul class="prompt" style="float:left; line-height:36px;">
+					   <li class="prompt-text" style="display: none;"><i><img src="images/imgregist/v-icon-1.png" width="16" height="16"></i><span>请输入用户名</span></li>
+					   <li class="prompt-error" style="display: none;"><i><img src="images/imgregist" width="16" height="16"></i><span>用户名只能由字母或字母和数字组合</span></li>
+					   <li class="prompt-correct" style="display: list-item;"><i><img src="images/imgregist/v-icon-3.png" width="16" height="16"></i><span></span></li>
+					</ul> -->
+                    
+                </div>
+                <div class="loginPerfect-data">
+                	<div class="name"><i>* </i>登录密码：</div>
+                	<div class="loginPerfect-input-div">
+                        <div class="loginPerfect-input">
+                            <input name="password" id="password" class="index-4 inp inp-primaryclick inp-primaryblur" type="password" maxlength="20" placeholder="8-20位字符，至少使用两种字符组合">
+                        </div>
+                    </div>
+                </div>
+                <div class="loginPerfect-data">
+                	<div class="name"><i>* </i>确认密码：</div>
+                	<div class="loginPerfect-input-div">
+                        <div class="loginPerfect-input">
+                            <input id="confirmPassword" name="confirmPassword" class="index-4 inp inp-primaryclick inp-primaryblur" type="password" maxlength="20" placeholder="请再次输入密码">
+                        </div>
+                    </div>
+                </div>
+				<div class="loginPerfect-data">
+					<div class="name"><i>* </i>手机号：</div>
+					<div class="loginPerfect-input-div">
+                        <div class="loginPerfect-input">
+                            <input name="mobile" id="mobile" class="index-2 inp inp-primaryclick inp-primaryblur" type="text" maxlength="11" placeholder="请输入11位手机号码">
+                        </div>
+                    </div>
+				</div>
+				<div class="loginPerfect-data">
+					<div class="name">验证码：</div>
+					<div class="loginPerfect-input-div">
+                        <div class="loginPerfect-input">
+                            <input id="verifyCode" name="verifyCode" class="index-3 inp inp-short inp-primary inp-primaryclick" maxlength="4" type="text" placeholder="请输入验证码">
+                        </div>
+                    </div>
+                    <div class="register-code"><img id="verifyCodeImg" src="https://passport.bl.com/sidebar/verifyCode.html?v=1516537276404"></div>
+                    <label class="ftx23">
+                        <a class="flk13" id="toggleImgCode" href="javascript:void(0);">换一张</a>
+                    </label>
+				</div>
+				<div class="loginPerfect-data">
+					<div class="name"><i>* </i>短信验证码：</div>
+					<div class="loginPerfect-input-div">
+                        <div class="loginPerfect-input">
+                            <input id="smsCode" name="smsCode" maxlength="6" class="index-3 inp inp-short inp-primaryclick inp-primaryblur" type="text" placeholder="请输入短信验证码">
+                        </div>
+                    </div>
+                    <div class="input-prompt get-code"><button class="to-obtain">获取验证码</button><button class="send" style="display:none">重新获取</button></div>
+				</div>
+				<div class="loginPerfect-data">
+					<div class="name">电子邮箱：</div>
+					<div class="loginPerfect-input-div">
+                        <div class="loginPerfect-input">
+                            <div id="maill-input" class="loginPerfect-input">
+                            	<input id="email" name="email" class="index-5 inp inp-primary" type="text" placeholder="请输入有效邮箱" autocomplete="off">
+                            <div class="mailBox" style="top: 34px; left: 2px; width: 295px;"></div></div>
+                        </div>
+                    </div>
+				</div>
+				<div class="loginPerfect-remember">
+	            	<label><input class="chickbox" type = "checkbox" name = ""/><span>我已阅读并同意</span></label><a id="agreement" href="http://help.bl.com/articleDetailed.html?articleId=382&amp;&amp;categoryType=help" target="_blank">《百联通会员注册协议》</a>
+	            	
+	            </div>
+	            <div class="register-button">
+	            	<button type="button" class="btn btn-primary sub">立即注册 完成绑定</button>
+	            </div>
+
+        	</div>
+        </div>
+	</div>
+	<div id="footer" class="footer">
+    	<div class="bottom-nav">
+        	<div>
+	            <a href="#javascript">关于我们</a><span>|</span>
+				<a href="#javascript">联系我们</a><span>|</span>
+				<a href="#javascript">加盟合作</a><span>|</span>
+	            <a href="#javascript">诚征英才</a><span>|</span>
+	            <a href="#javascript">友情链接</a>
+        	</div>
+        	<div class="copyright">上海百联全渠道电子商务有限公司 版权所有 <span>|</span> 沪ICP备15028847号
+        	</div>
+    	</div>
+		<div class="bottom-contact">
+    		<p>
+    			联系地址：上海市普陀区真光路1258号百联中环广场6楼
+        		<span>|</span>
+        		联系电话：021-52629933
+        		<span>|</span>
+        		咨询热线：400-900-8800
+    		</p>
+	        <p>
+	            本企业已通过ISO9001:2000 质量管理体系标准认证
+	            <span>|</span>
+	            认证注册号：04206Q10079ROM
+	            <span>|</span>
+	            认可注册号：CNAB042-Q
+	            <span>|</span>
+	            增值电信业务经营许可证：沪B2-20100062
+	            <span style="color: white;">97.38</span>
+	        </p>
+	    </div>
+	</div>
+
+</body>
+<script src="scripts/require.js"></script>
+<script src = "scripts/index.js"></script>
+<script src="scripts/ajax.js"></script>
+</html>

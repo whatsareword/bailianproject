@@ -22,9 +22,9 @@
 				
 			</div>
 			<div id="fileheader_not_login" class="file-head-info">
-				<a href="https://passport.bl.com/loginDisplay.html">登录</a>
+				<a href="#">登录</a>
 					<span>|</span>
-				<a href="https://reg.bl.com/regist.html">注册</a>
+				<a href="register.html">注册</a>
 			</div>
 		</div>
 	</div>
@@ -66,7 +66,7 @@
 				<ul>
 	                <li class="userlogin">
 	                	<a href="#javascript" class="login-button"><span></span><span>请登录</span></a>
-	                	<a href="#javascript" class="register">注册</a>
+	                	<a href="register.html" class="register">注册</a>
 	                    <b></b>
 	                </li>
 	                <li>
@@ -203,13 +203,15 @@
 			</div>
 			<!--*****************search*****************-->		
 			<div class="header-search">
-				<div class="ok-special"><a href="#javascript">安付宝OK卡专区</a></div>
-<!--***********************************search-input Blind search*****************-->	
+				<div class="ok-special">
+					<a href="#javascript">安付宝OK卡专区</a>
+				</div>
+<!--****************search-input Blind search*****************-->	
 				<div class="header-search-top">
 					<!--*****************input-text*****************-->		
 					<div class="header-search-input">
 						<div class="header-search-in">
-							<input type="text" class="search-input" placeholder="洗衣机">
+							<input type="text" class="search-input">
 							
 						</div>
 					
@@ -226,8 +228,19 @@
                                 </a>
                             </div>
 <!--**********************在这里添加盲搜的历史记录*****************-->
-                            <ul></ul>
+                            <dl>
+                            	<dd class=""><a href="javascript:;">锌</a></dd>
+                            </dl>
                         </div>
+						<div class="header-input-show1" >
+                            <div class="intshow-dl" style="display: block;">
+                                <dl>
+                                	
+                                </dl>
+                            </div>
+                        </div>
+
+
 					</div>
 <!--**********************************input-submit*****************-->
 					<div class="header-search-button">
@@ -1772,14 +1785,14 @@
 <!-- 特效：当点击.new_czt_next时  让ul向左移动965px 且按钮隐藏 .new_czt_prev显示-->
 <!-- 特效：当点击.new_czt_prev时  让ul向右移动965px 且按钮隐藏 .new_czt_next显示-->
 	<div id="valuegroup">
-		<div class="valuegroup">
+		<div class="valuegroup czt1 czt">
 			
 		</div>
 	</div>
 
 	<!-- ********************meetlater************************ -->
 	<div id="meetlater">
-		<div class="meetlater">
+		<div class="meetlater czt2 czt">
 			
 		</div>
 	</div>
@@ -1978,4 +1991,5 @@
 </body>
 <script src="scripts/require.js"></script>
 <script src = "scripts/index.js"></script>
+<script src="scripts/ajax.js"></script>
 </html>

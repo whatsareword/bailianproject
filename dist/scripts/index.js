@@ -1,5 +1,5 @@
 require(["scripts/config.js"],function(){
-	require(["jquery","biglist","hotwords","underhotwords","supperBanner","bannerRight","valueGroup","picMagnify"],function($,bigList,hots,underhots,supperbanner,bannerright,vagroup,picmagnify){
+	require(["jquery","biglist","hotwords","underhotwords","supperBanner","bannerRight","valueGroup","picMagnify","Search","Regist"],function($,bigList,hots,underhots,supperbanner,bannerright,vagroup,picmagnify,search,regist){
 
 		
 		$(".left-biglist-show .menu_floor ").find("a").attr("href","goodslist.html");
@@ -30,6 +30,8 @@ require(["scripts/config.js"],function(){
 		hots.init(hots_input);
 		underhots.init($(".hotword"));
 
+		search.init()
+
 
 		//广告栏
 		// $("#ad-top").find("a").on("click",function(){
@@ -46,30 +48,23 @@ require(["scripts/config.js"],function(){
 
 
 		// 超值团	
-		var url2="http://dc2.bl.com/js/mdata/group.html?callback=?&_=1515850988758";
-			$.getJSON(url2,function(res){
-				//console.log(res.message)
-				$(".valuegroup").html(res.message);
-				$(".valuegroup").find("a").attr("href","#javascript");
-				vagroup.init($(".new_czt_next"));
-				
-				
-				picmagnify.init($(".new_czt_show").find("img"));
+		var urlczt=["http://dc2.bl.com/js/mdata/group.html?callback=?&_=1515850988758","http://dc2.bl.com/js/mdata/featuredChannel.html?callback=?&_=1515851077642"]
+			$.each(urlczt,function(index,item){
+				$.getJSON(item,function(res){
+					++index;
+					var czt_name = ".czt"+index;
+					
+					$(czt_name).html(res.message);
+					$(czt_name).find("a").attr("href","#javascript");
 
+
+
+					vagroup.init($(".new_czt_next"));
+					picmagnify.init($(".czt").find("img"));
+				})
 			})
-			
-			
 
-
-		//详见恨晚
-			let url3="http://dc2.bl.com/js/mdata/featuredChannel.html?callback=?&_=1515851077642";
-			$.getJSON(url3,function(res){
-				//console.log(res.message)
-				$(".meetlater").html(res.message);
-				$(".meetlater").find("a").attr("href","#javascript");
-				$("new_tm_r").find("img").attr("class","picbig");
-				picmagnify.init($(".picbig"));
-			})
+			
 
 		//floor
 			let urlres=["http://dc2.bl.com/js/mdata/floor1.html?callback=?&_=1515851188127","http://dc2.bl.com/js/mdata/floor2.html?callback=?&_=1515851386147","http://dc2.bl.com/js/mdata/floor3.html?callback=?&_=1515851439708","http://dc2.bl.com/js/mdata/floor4.html?callback=?&_=1515851492687","http://dc2.bl.com/js/mdata/floor5.html?callback=?&_=1515851684043","http://dc2.bl.com/js/mdata/floor6.html?callback=?&_=1515851875582","http://dc2.bl.com/js/mdata/floor7.html?callback=?&_=1515851997646","http://dc2.bl.com/js/mdata/floor8.html?callback=?&_=1515852052792"];
@@ -103,11 +98,7 @@ require(["scripts/config.js"],function(){
 			})
 
 		//banner右边
-		/*.life_i1 {
-    	background: url(../images/icon/life_i1.png) no-repeat 0 0;
-    		}
-		相同的class名对应相同的图片名  
-		鼠标划过时 上下+-28px*/
+		
 		let $ali = $(".ban_life").find('li')
 		let lifenameArr =[];
 		for(var i = 1; i < $ali.length+1 ;i++){
@@ -117,7 +108,10 @@ require(["scripts/config.js"],function(){
 		}
 		bannerright.init($ali,lifenameArr);
 
-		//$(".ban_life").find('li').on("mouseenter",bannerright2.init())
+
+		//regist
+
+		
 		
 		
 
@@ -141,6 +135,15 @@ require(["scripts/config.js"],function(){
 		// })
 		
 		
+
+
+
+
+		regist.init();
+
+
+
+
 	})
 
 })

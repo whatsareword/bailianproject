@@ -59,6 +59,10 @@ body {
   min-width: 1190px;
   height: auto; }
 
+.wrap {
+  width: 1190px;
+  margin: 0 auto; }
+
 /*------------topnav-------------  */
 #topnav {
   height: 30px;
@@ -452,7 +456,8 @@ body {
   z-index: 1002;
   display: block;
   top: 0;
-  transition: top .3s; }
+  transition: top .3s;
+  display: none; }
   #suspensionbar .wrap {
     width: 1190px;
     margin: 0 auto; }
@@ -564,7 +569,8 @@ body {
           float: left;
           position: relative;
           z-index: 1001;
-          /*	-------------------------------Blind search show--------------*/ }
+          /*	-------------------------------Blind search show--------------*/
+          /*	----------------Blind search show1--------------*/ }
           #header .header .header-search .header-search-top .header-search-input .header-search-in {
             background: #FFF;
             height: 31px;
@@ -610,6 +616,40 @@ body {
                 #header .header .header-search .header-search-top .header-search-input .header-input-show .header-input-title .header-input-title-fr span {
                   float: left;
                   margin-left: 7px; }
+            #header .header .header-search .header-search-top .header-search-input .header-input-show dd {
+              margin-left: 10px;
+              height: 26px;
+              line-height: 26px; }
+          #header .header .header-search .header-search-top .header-search-input .header-input-show1 {
+            width: 423px;
+            border: 1px solid #ccc;
+            background: #FFF;
+            position: absolute;
+            z-index: 2;
+            display: none; }
+            #header .header .header-search .header-search-top .header-search-input .header-input-show1 .intshow-dl {
+              padding: 5px 0;
+              border-top: 1px solid #ccc;
+              line-height: 26px; }
+              #header .header .header-search .header-search-top .header-search-input .header-input-show1 .intshow-dl dd {
+                position: relative;
+                height: 26px; }
+                #header .header .header-search .header-search-top .header-search-input .header-input-show1 .intshow-dl dd a {
+                  display: block;
+                  padding: 0 10px;
+                  color: #333;
+                  height: 26px;
+                  font-size: 12px; }
+                  #header .header .header-search .header-search-top .header-search-input .header-input-show1 .intshow-dl dd a span {
+                    float: none;
+                    position: absolute;
+                    left: 10px;
+                    top: 0;
+                    display: inline-block; }
+                  #header .header .header-search .header-search-top .header-search-input .header-input-show1 .intshow-dl dd a i {
+                    float: right;
+                    display: inline-block;
+                    color: #999; }
         #header .header .header-search .header-search-top .header-search-button {
           height: 35px;
           width: 85px;
@@ -1133,16 +1173,6 @@ body {
         width: 224px;
         position: relative;
         overflow: hidden; }
-        #valuegroup .valuegroup .new_czt_l a img {
-          height: 250px;
-          width: 224px;
-          transition: all 1s; }
-        #valuegroup .valuegroup .new_czt_l a:hover img {
-          height: 260px;
-          width: 234px;
-          transform: translateX(-5px);
-          transform: translateY(-5px);
-          transition: all 1s; }
     #valuegroup .valuegroup .new_czt_r {
       width: 965px;
       height: 248px;

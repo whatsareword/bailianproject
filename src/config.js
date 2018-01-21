@@ -9,6 +9,8 @@ requirejs.config({
 		"bannerRight":"scripts/banner-right",
 		"valueGroup":"scripts/value-group",
 		"picMagnify":"scripts/picmagnify",
+		"Search":"scripts/search",
+		"Regist":"scripts/regist",
 		"Pop":"scripts/pop",
 		"loadLi":"scripts/loadli",
 		"shoppingCar":"scripts/shoppingcar"

@@ -11,6 +11,8 @@ define(["jquery"],function($){
 				//console.log(res);  
 				var hotword = res.obj[0].deployName;
 				$(_this.ele).attr("placeholder",hotword)
+				
+				
 				  
 			})
 		}

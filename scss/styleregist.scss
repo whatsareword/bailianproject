@@ -1,0 +1,191 @@
+@import "home-commen";
+body{
+	background: #f9f9f8;
+}
+#header-height{
+	width: 950px;
+    margin: 0 auto;
+	height: 110px;
+	.header-logo {
+	    float: left;
+	    margin-top: 29px;
+
+	}
+}
+#mainbody{
+	width: 950px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #e1dfda;
+    .center-top {
+	    height: 30px;
+	    border-bottom: 1px solid #e1dfda;
+	    padding: 10px 20px;
+	    line-height: 30px;
+	    .title-info {
+		    float: left;
+		    font-size: 16px;
+		    color: #ff002a;
+		}
+		.title-login {
+			font-size: 12px;
+		    float: right;
+		    font-family: 'Microsoft YaHei';
+		    color: #63625d;
+		    a {
+			    color: #0088cc;
+			}
+		}
+	}
+	.center-bottom{
+		padding: 50px 0px 74px 191px;
+		.loginPerfect-data{
+			padding: 10px 0px;
+			width: 759px;
+			height: 36px;
+			.name {
+			    float: left;
+			    font-size: 15px;
+			    color: #333333;
+			    width: 136px;
+			    text-align: right;
+			    line-height: 36px;
+			     i {
+				    color: #df3d36;
+				}
+			}
+			.loginPerfect-input-div {
+			    float: left;
+			    padding-left: 5px;
+			    display: inline;
+			    .loginPerfect-input {
+				    position: relative;
+				    input {
+						width: 258px;
+					    line-height: 34px;
+					    font-size: 16px;
+					    vertical-align: middle;
+					    padding: 0 10px 0 30px;
+					    text-indent: 0px;
+					    font-size: 12px;
+					    color: #000;
+					    border: 1px solid #cccccc;
+					    &:hover{
+					    	box-shadow: 0px 0px 3px #cccccc;
+					    }
+					}
+					.index-1 {
+					    background: #ffffff url(../images/imgregist/register.png) no-repeat 10px 9px;
+					}
+					.index-4 ,.index-3{
+					    width: 258px;
+					    background: #ffffff url(../images/imgregist/register.png) no-repeat 10px -52px;
+					}
+					.index-2{
+					    width: 258px;
+					    background: #ffffff url(../images/imgregist/register.png) no-repeat 10px -180px;
+					}
+					.index-5{
+						    width: 258px;
+						    background: #ffffff url(../images/imgregist/register.png) no-repeat 10px -287px;
+						}
+					.inp-short{
+						width: 158px;
+					}
+				}
+			}
+			.register-code {
+			    float: left;
+			    width: 90px;
+			    height: 36px;
+			    margin: 0 11px 0 10px;
+			    img {
+				    width: 90px;
+				    height: 36px;
+				}
+			}
+			.ftx23 {
+			    float: left;
+			    height: 36px;
+			    line-height: 36px;
+			    color: #706e69;
+			    a {
+				    color: #0084cc;
+				    text-decoration: underline;
+				}
+			}
+			.input-prompt {
+			    float: left;
+			    line-height: 36px;
+			    margin-left: 10px;
+			    color: #999999;
+			    button {
+				    width: 90px;
+				    height: 36px;
+				    border: 1px solid #c8c8c8;
+				    background: #f5f5f5;
+				    cursor: pointer;
+				}
+			}
+		}
+		.loginPerfect-remember {
+		    height: 25px;
+		    padding-left: 140px;
+		    line-height: 18px;
+		    overflow: hidden;
+		    padding-top: 5px;
+		    color: #666666;
+		    background: #fff;
+		    font-size: 12px;
+		    label {
+			    float: left;
+			    cursor: pointer;
+			    outline: none;
+			    padding-right: 10px;
+			    .chickbox{
+				    display: inline-block;
+				    
+				    float: left;
+				    border: 1px solid #55779b;
+				    margin-top: 4px;
+				    
+				}
+				span {
+				    float: left;
+				    margin-left: 15px;
+				    display: inline;
+				    font-family: 'Microsoft YaHei';
+				}
+			}
+			a {
+			    color: #0088ca !important;
+			    float: left;
+			}
+		}
+		.registered .register-button {
+		    padding-left: 134px;
+		    height: 36px;
+		    overflow: hidden;
+		}
+	}
+}
+
+
+
+.footer {
+    min-width: 950px;
+    margin: 0px auto;
+    clear: both;
+    margin-top: 0px !important;
+    padding-top: 20px !important;
+    background: url(../images/imgregist/login-bottom-bg.png) no-repeat top;
+    .bottom-nav {
+	    line-height: 24px;
+	    text-align: center;
+	    padding-top: 10px;
+	    color: #cccccc;
+	    span {
+		    padding: 0px 10px;
+		}
+	}
+}

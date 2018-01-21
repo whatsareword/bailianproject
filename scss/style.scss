@@ -11,6 +11,7 @@
     display: block;
     top: 0;
     transition: top .3s;
+    display: none;
     .wrap {
 	    width: 1190px;
 	    margin: 0 auto;
@@ -199,8 +200,52 @@
     							}
 						    }
 					    }
+					    dd {
+					    	margin-left: 10px;
+						    height: 26px;
+						    line-height: 26px;
+						}
 
 				    }
+
+/*	----------------Blind search show1--------------*/
+					.header-input-show1{
+					    width: 423px;
+					    border: 1px solid #ccc;
+					    background: #FFF;
+					    position: absolute;
+					    z-index: 2;
+					    display: none;
+					    .intshow-dl {
+						    padding: 5px 0;
+						    border-top: 1px solid #ccc;
+						    line-height: 26px;
+						    dd {
+							    position: relative;
+							    height: 26px;
+							    a {
+								    display: block;
+								    padding: 0 10px;
+								    color: #333;
+								    height: 26px;
+								    font-size: 12px;
+								    span {
+									    float: none;
+									    position: absolute;
+									    left: 10px;
+									    top: 0;
+									    display: inline-block;
+									}
+									i {
+									    float: right;
+									    display: inline-block;
+									    color: #999;
+									}
+								}
+							}
+						}
+					}
+
 				}
 				.header-search-button{
 					height: 35px;
@@ -849,23 +894,8 @@
 		    	width: 224px;
 		    	position: relative;
 		    	overflow: hidden;
-		    	img{
-		    		
-		    		height: 250px;
-		    		width: 224px;
-		    		
-		    		transition:all 1s;
-		    		
-		    			
-		    			
-		    		}
-		    		&:hover img{
-		    			height: 260px;
-		    			width: 234px;
-		    			transform:translateX(-5px);
-		    			transform:translateY(-5px);
-		    			transition:all 1s;
-		    	}
+		    	
+		    	
 
 		    }
 		}
