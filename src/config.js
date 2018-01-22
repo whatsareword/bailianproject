@@ -11,6 +11,10 @@ requirejs.config({
 		"picMagnify":"scripts/picmagnify",
 		"Search":"scripts/search",
 		"Regist":"scripts/regist",
+		"suspensBar":"scripts/suspensbar",
+		"logoList":"scripts/logolist",
+
+
 		"Pop":"scripts/pop",
 		"loadLi":"scripts/loadli",
 		"shoppingCar":"scripts/shoppingcar"

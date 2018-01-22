@@ -1,5 +1,5 @@
 require(["scripts/config.js"],function(){
-	require(["jquery","biglist","hotwords","underhotwords","supperBanner","bannerRight","valueGroup","picMagnify","Search","Regist"],function($,bigList,hots,underhots,supperbanner,bannerright,vagroup,picmagnify,search,regist){
+	require(["jquery","biglist","hotwords","underhotwords","supperBanner","bannerRight","valueGroup","picMagnify","Search","suspensBar"],function($,bigList,hots,underhots,supperbanner,bannerright,vagroup,picmagnify,search,suspensbar){
 
 		
 		$(".left-biglist-show .menu_floor ").find("a").attr("href","goodslist.html");
@@ -26,11 +26,14 @@ require(["scripts/config.js"],function(){
 			})
 		})
 		//搜索框里的热词
-		let hots_input = $(".header-search-in").find("input");
+		let hots_input = $(".search-input");
 		hots.init(hots_input);
 		underhots.init($(".hotword"));
-
+		//盲搜
 		search.init()
+		//  当滚轮划过搜索框时，悬浮栏显示
+		suspensbar.init()
+
 
 
 		//广告栏
@@ -139,7 +142,7 @@ require(["scripts/config.js"],function(){
 
 
 
-		regist.init();
+		
 
 
 

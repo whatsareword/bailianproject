@@ -31,13 +31,13 @@ gulp.task("font",()=>{
 
 gulp.task("script",()=>{
 	return gulp
-				.src(["src/*.js","model/*.js","libs/*.js"])
+				.src(["src/*.js","model/*.js","libs/**/*"])
 				.pipe(gulp.dest("dist/scripts"))
 })
 
 gulp.task("watch",()=>{
 	gulp.watch(["**/*.html","!module/**/*"],["html"]);
-	gulp.watch(["*/*.js","!module/**/*","!es6/*"],["script"]);
+	gulp.watch(["*/*.js","!module/**/*","libs/**/*","!es6/*"],["script"]);
 	gulp.watch(["es6/*.js","!module/**/*"],["es6"]);
 	gulp.watch(["images/**/*"],["images"]);
 	gulp.watch(["scss/*.scss"],["sass"]);

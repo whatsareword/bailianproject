@@ -127,6 +127,23 @@ body{
 				    cursor: pointer;
 				}
 			}
+			.prompt {
+			    margin-left: 10px;
+			    i {
+				    float: left;
+				    width: 16px;
+				    line-height: 0px;
+				    height: 16px;
+				    margin-top: 10px;
+				}
+				span {
+		    		padding-right: 6px;
+				    float: left;
+				    margin-left: 8px;
+				    display: inline;
+				    line-height: 36px;
+				}
+			}
 		}
 		.loginPerfect-remember {
 		    height: 25px;
@@ -144,17 +161,14 @@ body{
 			    padding-right: 10px;
 			    .chickbox{
 				    display: inline-block;
-				    
 				    float: left;
 				    border: 1px solid #55779b;
 				    margin-top: 4px;
-				    
 				}
 				span {
 				    float: left;
 				    margin-left: 15px;
 				    display: inline;
-				    font-family: 'Microsoft YaHei';
 				}
 			}
 			a {

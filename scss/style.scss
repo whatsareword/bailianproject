@@ -51,6 +51,12 @@
 		    	height: 49px;
 		    }
 		}
+		.bar-search{
+			float: left;
+		    height: 35px;
+		    margin-top: 17px;
+		    position: relative;
+		}
 		.header-search-1 {
 		    float: left;
 		    height: 35px;
@@ -133,9 +139,40 @@
 					color: #f00;
     			}
 		    }
+
 		    /*-------------search--------------*/
 /***************search-input Blind search*****************/
-		    .header-search-top{
+		    
+		    .hotword{
+		    	width: 490px;
+			    overflow: hidden;
+			    clear: both;
+			    height: 28px;
+			    line-height: 28px;
+			    margin-left: -5px;
+			    a{
+			    	color: #999;
+				    float: left;
+				    margin-right: 5px;
+				    margin-left: 5px;
+				    display: inline-block;
+				    font-size: 12px;
+				    &:hover{
+				    	color: #f00;
+				    	text-decoration: underline;
+				    }
+			    }
+			    span{
+			    	float: left;
+				    color: #e5e5e5;
+				    margin-left: 5px;
+				    display: inline-block;
+			    }
+		    }
+    	}
+    }
+}
+.header-search-top{
 		    	width: 565px;
 			    height: 35px;
 			    border-top-right-radius: 3px;
@@ -267,259 +304,10 @@
 				    }
 				}
 		    }
-		    .hotword{
-		    	width: 490px;
-			    overflow: hidden;
-			    clear: both;
-			    height: 28px;
-			    line-height: 28px;
-			    margin-left: -5px;
-			    a{
-			    	color: #999;
-				    float: left;
-				    margin-right: 5px;
-				    margin-left: 5px;
-				    display: inline-block;
-				    font-size: 12px;
-				    &:hover{
-				    	color: #f00;
-				    	text-decoration: underline;
-				    }
-			    }
-			    span{
-			    	float: left;
-				    color: #e5e5e5;
-				    margin-left: 5px;
-				    display: inline-block;
-			    }
-		    }
-    	}
-    }
-}
-/* ---------------nav---------------- */
-#nav{
-	height: 35px;
-    border-bottom: 2px solid #151515;
-    background: #fff;
-    min-width: 1190px;
-    z-index: 996;
-    position: relative;
 
-/* --------------------------doudou------------------------------ */
-    .doudou{
-	    width: 24px;
-	    height: 22px;
-	    position: absolute;
-	    top: 0;
-	    left: 220px;
-	    background: url(../images/icon/doudou.png) no-repeat;
-	    //z-index: 999;
-    }
-    .nav{
-    	width: 1190px;
-    	margin: 0 auto;
-		.navleft{
-			width: 190px;
-			height: 35px;
-			position: relative;
-			float: left;
-			.nav-left{
-	    		background: #151515;
-	    		width: 190px;
-			    cursor: pointer;
-			    height: 35px;
-			    
-	    		z-index: 4;
-			    i{
-					display: inline-block;
-				    width: 14px;
-				    height: 12px;
-				    float: left;
-				    margin-top: 12px;
-				    margin-left: 13px;
-				    background: url(../images/icon/nav1200_sprite.png) no-repeat 0 -101px;
-			    }
-			    span{
-			    	margin-left: 25px;
-				    color: #FFF;
-				    font-size: 14px;
-				    line-height: 35px;
-				    float: left;
-			    }
-		    }
 
-/**************************商品列表*************************/
-			.int-nav{
-				line-height: 28px;
-			}
-		    .show-nav{
-	    		position: absolute;
-	    		width: 190px;
-			    left: 0;
-			    top: 35px;
-			    .show-nav-bg{
-			    	width: 190px;
-				    height: 431px;
-				    position: absolute;
-				    left: 0;
-				    top: 0;
-				    background: #151515;
-				    opacity: .75;
-			    }
-			    .banner-itemleft{
-			    	position: relative;
-				    z-index: 4;
-				    overflow: hidden;
-				    height: 412px;
-				    width: 190px;
-				    text-align: left;
-				    color: #FFF;
-				    padding: 11px 0 9px;
-				    li{
-				    	height: 29px;
-    					line-height: 29px;
-    					padding-left: 16px;
-    					i{
-    						float: left;
-						    width: 16px;
-						    height: 16px;
-						    margin-top: 7px;
-						    display: inline-block;
-						    line-height: 16px;
-						    font-size: 16px;
-						    background: url(../images/icon/nav-v3-icon-1.png) no-repeat;
-    					}
 
-    					span{
-    						float: left;
-						    margin-left: 10px;
-						    display: inline-block;
-						    font-size: 13px;
-						   a{
-						    	color: #fff;
-    							
-						    }
-    					}
-    					&:hover{
-    						background: #888;
-    					}
-    					&:hover a{
-    						text-decoration: underline;
-    					}
-				    }
-			    }
-			    .left-biglist-show{
-			    	position: absolute;
-				    left: 190px;
-				    top: 1px;
-				    background: #fff;
-				    box-shadow: 0 0 4px rgba(0,0,0,.2);
-				    -moz-box-shadow: 0 0 4px rgba(0,0,0,.2);
-				    -webkit-box-shadow: 0 0 4px rgba(0,0,0,.2);
-				    display: none;
-				    width: 1000px;
-				    height: 430px;
-				    border: 1px solid #dfdfdf;
-				    border-left: 0;
-				    border-top: 0;
-				    z-index: 3;
-				    li{
-				    	width: 984px;
-					    height: 416px;
-					    //display: none;
-					    padding: 8px;
-					    overflow: hidden;
-					    .menu_right_img{
-					    	width: 240px;
-						    height: 422px;
-						    float: right;
-						    a{
-						    	margin-bottom: 9px;
-						    	color: #666;
-    							text-decoration: none;
-    							img{
-    								margin-bottom: 9px;
-    							}
-						    }
-					    }
-					    .menu_floor {
-						    width: 725px;
-						    margin: 10px 0 0 5px;
-						    line-height: 23px;
-						    position: relative;
-						    overflow: hidden;
-						    span{
-						    	width: 75px;
-							    font-weight: 700;
-							    float: left;
-							    margin-right: 23px;
-							    text-align: right;
-							    a{
-							    	display: inline-block;
-							    }
-						    }
-						    .menu_floor_a{
-						    	width: 620px;
-							    float: left;
-							    line-height: 23px;
-							    padding-bottom: 5px;
-							    border-bottom: 1px dashed #f3f3f3;
-							    a{
-							    	margin-right: 18px;
-								    color: #666;
-								    display: inline-block;
-								    &:hover{
-								    	text-decoration: underline;
-								    }
-							    }
-						    }
-						}
-				    }
-			    }
-			}
-		}
-		.navright{
-			max-width: 1000px;
-		    float: left;
-		    font-family: 'Microsoft YaHei';
-		    font-size: 15px;
-		    color: #000;
-		    line-height: 35px;
-		    height: 35px;
-		    overflow: hidden;
-		    white-space: nowrap;
-		    li{
-		    	float: left;
-			    padding: 0 18px;
-			    position: relative;
-			    z-index: 999;
-			    background: #fff;
-			    a{
-			    	display: block;
-				    height: 35px;
-				    position: relative;
-				    overflow: hidden;
-				    transition: all .2s ease-in 0s;
-				    -webkit-transition: all .2s ease-in 0s;
-				    color: #333;
-				    font-weight: 700;
-				    z-index: 1000;
-				    &:hover{
-				    	color: #e00;
-				    }
-				    span{
-				    	width: 100%;
-					    height: 3px;
-					    position: absolute;
-					    left: 0;
-					    top: 35px;
-					    
-				    }
-			    }
-		    }
-		}
-    }
-}
+
 #right-slidebar{
 	height: 100%;
     right: -276px;

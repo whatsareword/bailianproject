@@ -31,14 +31,20 @@
                             <input name="loginId" id="loginId" class="index-1 inp inp-primaryclick inp-primary" maxlength="15" type="text" placeholder="6-20位字符，支持字母或字母与数字组合">
                         </div>
                     </div>
-					<!--焦点时 input***border: 2px solid #7fcbfe;
-						错误时 input*** border: 2px solid #f77799;
-						webkit-box-shadow: 0px 0px 3px #f77799;
 					<ul class="prompt" style="float:left; line-height:36px;">
-					   <li class="prompt-text" style="display: none;"><i><img src="images/imgregist/v-icon-1.png" width="16" height="16"></i><span>请输入用户名</span></li>
-					   <li class="prompt-error" style="display: none;"><i><img src="images/imgregist" width="16" height="16"></i><span>用户名只能由字母或字母和数字组合</span></li>
-					   <li class="prompt-correct" style="display: list-item;"><i><img src="images/imgregist/v-icon-3.png" width="16" height="16"></i><span></span></li>
-					</ul> -->
+					    <li class="prompt-text" style="display: none;">
+					   		<i><img src="images/imgregist/v-icon-1.png" width="16" height="16"></i>
+					   		<span>请输入用户名</span>
+					   	</li>
+					   	<li class="prompt-error" style="display: none;">
+					   		<i><img src="images/imgregist" width="16" height="16"></i>
+					   		<span>用户名只能由字母或字母和数字组合</span>
+					   	</li>
+					   	<li class="prompt-correct" style="display: none;">
+					   		<i><img src="images/imgregist/v-icon-3.png" width="16" height="16"></i>
+					   		<span></span>
+					   	</li>
+					</ul>
                     
                 </div>
                 <div class="loginPerfect-data">
@@ -48,6 +54,33 @@
                             <input name="password" id="password" class="index-4 inp inp-primaryclick inp-primaryblur" type="password" maxlength="20" placeholder="8-20位字符，至少使用两种字符组合">
                         </div>
                     </div>
+					<ul class="prompt" style="float:left; line-height:36px;">
+                        <li class="prompt-text" style="display: none;">
+                        	<i><img src="https://res12.iblimg.com/respc-1/resources/v3.0/css/i/v-icon-1.png" width="16" height="16">
+                        	</i>
+                        	<span>密码强度</span>
+                            <i id="strength_L" class="strength-1" style="background:#FF0000 none repeat scroll 0% 0%;">弱</i>
+                            <i id="strength_M" class="strength-1" style="background:#cccccc none repeat scroll 0% 0%;">中</i>
+                            <i id="strength_H" class="strength-1" style="background:#cccccc none repeat scroll 0% 0%;">强</i>
+                        </li>
+                        <li class="prompt-error" style="display: none;">
+                        	<i><img src="https://res13.iblimg.com/respc-1/resources/v3.0/css/i/v-icon-2.png" width="16" height="16"></i>
+                        	<span>不能使用相同的数字或是字符</span>
+                        </li>
+                        <li class="prompt-correct" style="display: none;">
+                        	<i><img src="https://res14.iblimg.com/respc-1/resources/v3.0/css/i/v-icon-3.png" width="16" height="16">
+                        	</i><span>密码强度</span>
+                            <i id="strength_L" class="strength-1" style="background: rgb(204, 204, 204) none repeat scroll 0% 0%;">弱</i>
+                            <i id="strength_M" class="strength-1" style="background: rgb(204, 204, 204) none repeat scroll 0% 0%;">中</i>
+                            <i id="strength_H" class="strength-1" style="background: rgb(204, 204, 204) none repeat scroll 0% 0%;">强</i>
+                        </li>
+                        <li class="prompt-caps" style="display: none;">
+							<i><img src="https://res15.iblimg.com/respc-1/resources/v3.0/css/i/pay-notice.png" height="16" width="16"></i>
+							<span>大写锁定已打开，请注意大小写！</span>
+						</li>
+                    </ul>
+
+
                 </div>
                 <div class="loginPerfect-data">
                 	<div class="name"><i>* </i>确认密码：</div>
@@ -69,7 +102,7 @@
 					<div class="name">验证码：</div>
 					<div class="loginPerfect-input-div">
                         <div class="loginPerfect-input">
-                            <input id="verifyCode" name="verifyCode" class="index-3 inp inp-short inp-primary inp-primaryclick" maxlength="4" type="text" placeholder="请输入验证码">
+                            <input id="verifyCode" name="verifyCode" class="index-3 inp inp-short inp-primary " maxlength="4" type="text" placeholder="请输入验证码">
                         </div>
                     </div>
                     <div class="register-code"><img id="verifyCodeImg" src="https://passport.bl.com/sidebar/verifyCode.html?v=1516537276404"></div>
@@ -142,6 +175,6 @@
 
 </body>
 <script src="scripts/require.js"></script>
-<script src = "scripts/index.js"></script>
+<script src = "scripts/regist_index.js"></script>
 <script src="scripts/ajax.js"></script>
 </html>
