@@ -54,3 +54,9 @@ table {
 
 .border0, .noborder {
   border: none; }
+
+.px12 {
+  font-size: 12px; }
+
+.px13 {
+  font-size: 13px; }

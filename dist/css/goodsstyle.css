@@ -56,6 +56,12 @@ table {
 .border0, .noborder {
   border: none; }
 
+.px12 {
+  font-size: 12px; }
+
+.px13 {
+  font-size: 13px; }
+
 body {
   min-width: 1190px;
   height: auto; }
@@ -1075,6 +1081,7 @@ body {
           color: #987144;
           text-decoration: underline; }
 
+/* ---------------排序选项 -----------------*/
 #marquee {
   margin-top: 20px;
   height: 36px; }
@@ -1100,3 +1107,251 @@ body {
         background: #c01133;
         border: 1px solid #c01133;
         color: #FFF; }
+      .sequence-left ul li span {
+        float: left; }
+      .sequence-left ul li i {
+        float: left;
+        margin-left: 7px;
+        display: inline-block;
+        width: 7px;
+        height: 34px;
+        background-repeat: no-repeat; }
+      .sequence-left ul li .i1 {
+        background: url(../images/icongoodslist/icon-xiala.png) no-repeat 0 center; }
+      .sequence-left ul li .i2 {
+        background: url(../images/icongoodslist/icon-xiala1.png) no-repeat 0 center; }
+      .sequence-left ul li .i3 {
+        background: url(../images/icongoodslist/icon-xiala.png) no-repeat 0 center; }
+
+.left-money {
+  float: left;
+  margin-left: 10px;
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  z-index: 3;
+  width: 164px; }
+  .left-money .moneyshow {
+    padding: 4px;
+    position: absolute;
+    border: 1px solid #ccc;
+    background: #f8f8f8; }
+    .left-money .moneyshow input {
+      height: 24px;
+      border: 1px solid #ccc;
+      width: 68px;
+      text-align: center;
+      background: #fff;
+      float: left;
+      vertical-align: middle; }
+    .left-money .moneyshow span {
+      float: left; }
+
+.sequence-right {
+  margin-left: 10px;
+  height: 34px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  padding: 0 4px 0 10px;
+  float: right;
+  width: 624px; }
+  .sequence-right .option {
+    float: left; }
+    .sequence-right .option label {
+      margin-right: 25px;
+      line-height: 34px;
+      float: left;
+      cursor: pointer; }
+      .sequence-right .option label input {
+        float: left;
+        cursor: pointer;
+        margin-top: 10px;
+        outline: 0;
+        padding: 0;
+        list-style: none; }
+      .sequence-right .option label span {
+        float: left;
+        margin-left: 5px;
+        color: #333; }
+  .sequence-right .sequence-right-pt {
+    float: right;
+    color: #666;
+    line-height: 26px;
+    padding-top: 4px; }
+    .sequence-right .sequence-right-pt .fr-show {
+      float: left;
+      width: 68px;
+      margin-left: 2px; }
+      .sequence-right .sequence-right-pt .fr-show a {
+        background: #eee url(../images/icongoodslist/swicon.png) no-repeat center center;
+        float: right;
+        height: 24px;
+        width: 24px;
+        border: 1px solid #ccc;
+        margin-left: 8px; }
+
+/* 商品列表 */
+#mainpic {
+  margin-top: 10px; }
+  #mainpic .wrap {
+    overflow: hidden; }
+    #mainpic .wrap .pro-class {
+      width: 1200px; }
+      #mainpic .wrap .pro-class li {
+        margin-top: 10px;
+        margin-right: 10px;
+        float: left;
+        position: relative;
+        width: 230px;
+        height: 390px; }
+        #mainpic .wrap .pro-class li .pro-show {
+          width: 200px;
+          border: 1px solid #eee;
+          padding: 14px;
+          height: auto;
+          padding-bottom: 0;
+          float: left;
+          display: inline; }
+          #mainpic .wrap .pro-class li .pro-show .pro-icon {
+            position: absolute;
+            right: 2px;
+            top: 2px;
+            z-index: 2; }
+          #mainpic .wrap .pro-class li .pro-show .pro-img {
+            height: 200px;
+            width: 200px;
+            position: relative; }
+            #mainpic .wrap .pro-class li .pro-show .pro-img a {
+              color: #666666;
+              text-decoration: none; }
+          #mainpic .wrap .pro-class li .pro-show .pro-money {
+            height: 26px;
+            margin-top: 10px;
+            position: relative;
+            white-space: nowrap; }
+            #mainpic .wrap .pro-class li .pro-show .pro-money .money-fl {
+              float: left;
+              font-family: Verdana,Geneva,sans-serif;
+              color: #e6133c;
+              line-height: 26px;
+              font-size: 18px; }
+            #mainpic .wrap .pro-class li .pro-show .pro-money .money-fr {
+              float: right; }
+              #mainpic .wrap .pro-class li .pro-show .pro-money .money-fr span {
+                float: left;
+                margin-left: 3px;
+                display: inline-block;
+                height: 18px;
+                margin-top: 4px;
+                line-height: 18px;
+                text-align: center;
+                border-radius: 3px;
+                color: #fff;
+                padding: 0 3px;
+                background: #ff4c61; }
+          #mainpic .wrap .pro-class li .pro-show .product-comment {
+            height: 42px;
+            clear: both; }
+            #mainpic .wrap .pro-class li .pro-show .product-comment .pro-name {
+              line-height: 21px;
+              color: #333;
+              height: 21px;
+              word-break: break-all;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis; }
+              #mainpic .wrap .pro-class li .pro-show .product-comment .pro-name a {
+                color: #333; }
+                #mainpic .wrap .pro-class li .pro-show .product-comment .pro-name a:hover {
+                  text-decoration: underline; }
+            #mainpic .wrap .pro-class li .pro-show .product-comment .pro-discount {
+              line-height: 21px;
+              color: #e6133c;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              text-decoration: none; }
+              #mainpic .wrap .pro-class li .pro-show .product-comment .pro-discount a {
+                color: #e6133c;
+                word-break: break-all; }
+                #mainpic .wrap .pro-class li .pro-show .product-comment .pro-discount a:hover {
+                  text-decoration: underline; }
+          #mainpic .wrap .pro-class li .pro-show .pro-top {
+            height: 21px;
+            line-height: 21px; }
+            #mainpic .wrap .pro-class li .pro-show .pro-top .pro-top-left {
+              float: left;
+              background: url(../images/icongoodslist/list-top-icon.png) no-repeat left;
+              padding-left: 20px;
+              color: #999; }
+              #mainpic .wrap .pro-class li .pro-show .pro-top .pro-top-left span {
+                float: left; }
+              #mainpic .wrap .pro-class li .pro-show .pro-top .pro-top-left .red {
+                float: left;
+                display: inline;
+                margin: 0 4px;
+                color: #666;
+                max-width: 84px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis; }
+          #mainpic .wrap .pro-class li .pro-show .pro-assess {
+            height: 21px;
+            line-height: 21px; }
+            #mainpic .wrap .pro-class li .pro-show .pro-assess .pro-assess-right {
+              float: left;
+              color: #999; }
+          #mainpic .wrap .pro-class li .pro-show .probtn {
+            padding: 4px 0 14px;
+            display: block; }
+            #mainpic .wrap .pro-class li .pro-show .probtn button {
+              border: 1px solid #e6133c;
+              background: #fff;
+              color: #e6133c;
+              font-size: 16px;
+              height: 36px;
+              width: 100%; }
+              #mainpic .wrap .pro-class li .pro-show .probtn button:hover {
+                color: #fff;
+                background: #E6133C; }
+    #mainpic .wrap .page-show {
+      text-align: center;
+      height: 26px;
+      padding-top: 70px; }
+      #mainpic .wrap .page-show table {
+        margin: 0 auto;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle; }
+        #mainpic .wrap .page-show table .page {
+          display: inline-block;
+          text-align: center;
+          font-size: 12px;
+          white-space: nowrap; }
+          #mainpic .wrap .page-show table .page li {
+            margin: 0 2px;
+            display: inline-block;
+            height: 26px; }
+            #mainpic .wrap .page-show table .page li a {
+              background: #eee;
+              height: 24px;
+              min-width: 24px;
+              border: 1px solid #ccc;
+              color: #333;
+              line-height: 24px;
+              text-align: center;
+              display: block; }
+              #mainpic .wrap .page-show table .page li a:hover {
+                background: #FFF;
+                border: 1px solid #999;
+                box-shadow: 0 0 3px #bbb; }
+            #mainpic .wrap .page-show table .page li .a1 {
+              background: #e6133c;
+              color: #fff;
+              border: 1px solid #e6133c; }
+              #mainpic .wrap .page-show table .page li .a1:hover {
+                background: #e6133c;
+                border: 1px solid #999;
+                box-shadow: 0 0 3px #bbb; }
+          #mainpic .wrap .page-show table .page .ym {
+            width: 48px; }

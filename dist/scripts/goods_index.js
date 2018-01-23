@@ -1,5 +1,5 @@
 require(["scripts/config.js"],function(){
-	require(["jquery","biglist","hotwords","underhotwords","Search","logoList"],function($,bigList,hots,underhots,search,logolist){
+	require(["jquery","biglist","hotwords","underhotwords","Search","logoList","Prolist"],function($,bigList,hots,underhots,search,logolist,prolist){
 		$(".left-biglist-show .menu_floor ").find("a").attr("href","goodslist.html");
 							
 		//鼠标滑过li时让left-biglist-show>li的display:block
@@ -36,6 +36,10 @@ require(["scripts/config.js"],function(){
 		// 品牌中的JSon-txt
 		logolist.init()
 		
+
+		//商品列表prolist
+		prolist.init($(".page").find(".li-btn"))
+
 
 
 

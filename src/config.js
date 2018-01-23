@@ -13,7 +13,8 @@ requirejs.config({
 		"Regist":"scripts/regist",
 		"suspensBar":"scripts/suspensbar",
 		"logoList":"scripts/logolist",
-
+		"Prolist":"scripts/prolist",
+		"goodsMagnify":"scripts/goods-magnify",
 
 		"Pop":"scripts/pop",
 		"loadLi":"scripts/loadli",

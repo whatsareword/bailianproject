@@ -16,7 +16,6 @@ define(["jquery"],function($){
 			res.forEach(this.logoErgodic.bind(this))
 		},
 		logoErgodic:function(item){
-			console.log(item);
 			this.$a = $('<a href="javascript:;"></a>');
 			this.$li = $("<li></li>");
 			this.$span = $("<span></span>");
