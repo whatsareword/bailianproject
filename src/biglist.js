@@ -14,13 +14,15 @@ define(["jquery"],function($){
 		},
 		indexli:function(){
 			$(this.dom).css({
-				display:"block"
+				display:"block",
+				zIndex :"99999"
 			})
 			
 			
 			$(this.ele).eq(this.index)
 			.css({
-				display:"block"
+				display:"block",
+				zIndex :"99999"
 			})
 			.siblings().css({
 				display:"none"

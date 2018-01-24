@@ -532,7 +532,6 @@ body{
 	    top: 0;
 	    left: 220px;
 	    background: url(../images/icon/doudou.png) no-repeat;
-	    //z-index: 999;
     }
     .nav{
     	width: 1190px;
@@ -542,13 +541,13 @@ body{
 			height: 35px;
 			position: relative;
 			float: left;
+			
 			.nav-left{
 	    		background: #151515;
 	    		width: 190px;
 			    cursor: pointer;
 			    height: 35px;
-			    
-	    		z-index: 4;
+			  
 			    i{
 					display: inline-block;
 				    width: 14px;
@@ -576,6 +575,7 @@ body{
 	    		width: 190px;
 			    left: 0;
 			    top: 35px;
+			    z-index: 999999;
 			    .show-nav-bg{
 			    	width: 190px;
 				    height: 431px;
@@ -776,71 +776,125 @@ body{
 	    p{
 	    	background: #333;
 	    }
-	    .show-tk {
-		    right: 320px;
-		    margin-top: 35px;
-		}
-		.show-bx {
-		    top: 0;
-		    right: 315px;
+	    .login {
+		    font-size: 12px;
 		    position: absolute;
-		    width: 290px;
-		    height: 100px;
-		    border-radius: 5px;
-		    box-shadow: 0 0 5px #ccc;
-		    z-index: 9999999;
-		    color: #000;
-		    background: #fff;
-		    margin-top: -34px;
+		    top: 100px;
+		    z-index: 99;
+		}
+		.sidecss {
+		    height: 40px;
+		    font-size: 12px;
+		    width: 38px;
+		    background: #333;
+		    text-align: center;
+		    margin: 2px 0;
+		    line-height: 40px;
+		    transition: all .2s ease;
+		    -webkit-transition: all .2s ease;
+		    -moz-transition: all .2s ease;
+		    -ms-transition: all .2s ease;
+		    -o-transition: all .2s ease;
+		}
+	    
+		.mui-mbar-tab-normal-arr {
+		    position: absolute;
+		    top: 14px;
+		    right: 0;
 		    //display: none;
-		    .mui-mbar-tab-normal-arr {
+		    width: 6px;
+		    height: 12px;
+		    background: url(../images/icon/sidebar_in.png) no-repeat 0 -108px;
+		    border: 0;
+		}
+		.mui-mbar-tab {
+		    position: relative;
+		    z-index: 999;
+			top: 15px;
+			.mui-mbar-tab-tip {
+			    opacity: 1;
+			    display: none;
 			    position: absolute;
-			    top: 14px;
-			    right: 0;
-			    //display: none;
-			    width: 6px;
-			    height: 12px;
-			    background: url(../images/icon/sidebar_in.png) no-repeat 0 -108px;
-			    border: 0;
-			}
-			.mui-mbar-tab {
-			    position: relative;
-			    z-index: 999;
-				top: 15px;
-				.mui-mbar-tab-tip {
-				    opacity: 1;
-				    display: none;
-				    position: absolute;
-				    width: 0;
-				    line-height: 40px;
-				    right: 38px;
-				    top: -17px;
-				    border: 1px solid #DDD;
-				    color: #000;
-				    background-color: #FFF;
-				    overflow: hidden;
-				    cursor: default;
-				    border-top-left-radius: 8%;
-				    border-bottom-left-radius: 8%;
-				    .tip_con {
-					    width: 86px;
-					    font-size: 14px;
-					    color: #333;
-					    .mui-mbar-tab-tip-arr {
-						    position: absolute;
-						    top: 15px;
-						    right: -6px;
-						    width: 6px;
-						    height: 12px;
-						    background: url(../images/icon/sidebar_in.png) no-repeat -6px -108px;
-						}
+			    width: 0;
+			    line-height: 40px;
+			    right: 38px;
+			    top: -17px;
+			    border: 1px solid #DDD;
+			    color: #000;
+			    background-color: #FFF;
+			    overflow: hidden;
+			    cursor: default;
+			    border-top-left-radius: 8%;
+			    border-bottom-left-radius: 8%;
+			    .tip_con {
+				    width: 86px;
+				    font-size: 14px;
+				    color: #333;
+				    .mui-mbar-tab-tip-arr {
+					    position: absolute;
+					    top: 15px;
+					    right: -6px;
+					    width: 6px;
+					    height: 12px;
+					    background: url(../images/icon/sidebar_in.png) no-repeat -6px -108px;
 					}
 				}
 			}
 			i{
 				background: url(../images/icon/sidebar_out.png) no-repeat 0 0;
+				width: 38px;
+			    height: 40px;
+			    float: left;
+			    display: inline;
 			}
 		}
+		.shopcar {
+		    border-top: 1px solid #666;
+		    border-bottom: 1px solid #666;
+		    height: 174px;
+		    position: absolute;
+		    top: 160px;
+		    width: 43px;
+		    right: 0;
+		    z-index: 99999;
+		    background-color: #333;
+		    font-family: 'Microsoft YaHei';
+		    .mui-mbar-tab-cart-arr {
+			    position: absolute;
+			    top: 82px;
+			    right: 0;
+			    z-index: 999990;
+			    width: 6px;
+			    height: 12px;
+			    display: none;
+			    background: url(../images/icon/sidebar_in.png) no-repeat 0 -108px;
+			}
+			i {
+			    width: 24px;
+			    height: 18px;
+			    margin-top: 36px;
+			    background: url(../images/icon/sidebar_out.png) no-repeat 0 -365px;
+			    display: inline-block;
+			}
+			 span {
+			    margin-top: 10px;
+			    line-height: 15px;
+			    display: block;
+			    font-size: 14px;
+			}
+			b {
+			    width: 20px;
+			    height: 20px;
+			    border-radius: 50%;
+			    background: #e6133c;
+			    text-align: center;
+			    display: block;
+			    line-height: 18px;
+			    color: #FFF;
+			    margin-top: 10px;
+			}
+		}
+		
     }
 }
 

@@ -6,6 +6,7 @@ require(["scripts/config.js"],function(){
 		let ali = $(".banner-itemleft").find('li');
 		let listali = $(".left-biglist-show").find('li');
 		let list_show = $(".left-biglist-show");
+		
 		$(ali).on("mouseenter",function(){
 			let index=$(this).index();
 			$(this)

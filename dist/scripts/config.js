@@ -15,9 +15,9 @@ requirejs.config({
 		"logoList":"scripts/logolist",
 		"Prolist":"scripts/prolist",
 		"goodsMagnify":"scripts/goods-magnify",
+		"timeCountdown":"scripts/time-countdown",
+		"detailAlsobuy":"scripts/detail-alsobuy",
 
-		"Pop":"scripts/pop",
-		"loadLi":"scripts/loadli",
 		"shoppingCar":"scripts/shoppingcar"
 		
 
