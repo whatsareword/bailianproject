@@ -1533,3 +1533,48 @@ body {
             font-weight: 600; }
             .alsobuy .strip ul a li .price i {
               font-size: 16px; }
+
+.product-table {
+  margin: 25px auto; }
+  .product-table .proinfo-main {
+    float: right;
+    width: 960px; }
+    .product-table .proinfo-main .product-tab {
+      width: 958px;
+      height: 54px;
+      line-height: 54px;
+      border: 1px solid #eaeaea;
+      background: #f6f6f6;
+      font-family: \5FAE\8F6F\96C5\9ED1;
+      position: relative; }
+      .product-table .proinfo-main .product-tab li {
+        width: 158px;
+        height: 54px;
+        line-height: 54px;
+        float: left;
+        display: inline;
+        position: relative;
+        color: #333;
+        font-size: 16px; }
+      .product-table .proinfo-main .product-tab .select {
+        width: 158px;
+        margin-left: -1px;
+        color: #ec595c;
+        border-left: 1px solid #eaeaea;
+        border-right: 1px solid #eaeaea;
+        background: #fff; }
+    .product-table .proinfo-main .goods-details-box {
+      margin: -1px auto 20px auto;
+      width: 958px;
+      border-left: 1px solid #eaeaea;
+      border-right: 1px solid #eaeaea;
+      border-bottom: 1px solid #eaeaea; }
+      .product-table .proinfo-main .goods-details-box #describe {
+        margin: 0 auto;
+        padding-top: 20px;
+        width: 920px;
+        font-size: 12px; }
+        .product-table .proinfo-main .goods-details-box #describe img {
+          vertical-align: middle;
+          display: block;
+          margin: 0 auto; }

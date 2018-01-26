@@ -5,7 +5,6 @@ requirejs.config({
 		"biglist":"scripts/biglist",
 		"hotwords":"scripts/hotwords",
 		"underhotwords":"scripts/underhotwords",
-		"supperBanner":"scripts/jquery.supperBanner",
 		"bannerRight":"scripts/banner-right",
 		"valueGroup":"scripts/value-group",
 		"picMagnify":"scripts/picmagnify",
@@ -17,8 +16,11 @@ requirejs.config({
 		"goodsMagnify":"scripts/goods-magnify",
 		"timeCountdown":"scripts/time-countdown",
 		"detailAlsobuy":"scripts/detail-alsobuy",
+		"shoppingCar":"scripts/shoppingcart",
+		"cookie":"scripts/jquery.cookie",
+		"supperBanner":"scripts/jquery.supperBanner",
+		"ShoppingGoods":"scripts/shoppinggoods"
 
-		"shoppingCar":"scripts/shoppingcar"
 		
 
 	}

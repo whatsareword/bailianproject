@@ -1,5 +1,5 @@
 require(["scripts/config.js"],function(){
-	require(["jquery","biglist","hotwords","underhotwords","Search","logoList","Prolist"],function($,bigList,hots,underhots,search,logolist,prolist){
+	require(["jquery","biglist","hotwords","underhotwords","Search","logoList","Prolist","shoppingCar"],function($,bigList,hots,underhots,search,logolist,prolist,shoppingcar){
 		$(".left-biglist-show .menu_floor ").find("a").attr("href","goodslist.html");
 							
 		//鼠标滑过li时让left-biglist-show>li的display:block
@@ -40,6 +40,13 @@ require(["scripts/config.js"],function(){
 
 		//商品列表prolist
 		prolist.init($(".page").find(".li-btn"))
+
+		//购物车
+		clearTimeout(this.timer);
+		this.timer=setTimeout(function(){
+			shoppingcar.init($(".pro-class").find("button"))
+			} ,1000)
+		
 
 
 

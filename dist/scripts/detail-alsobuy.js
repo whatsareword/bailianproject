@@ -30,7 +30,6 @@ define(["jquery"],function($){
 		picergodic:function(item){
 
 			this.item=item;
-			console.log(this.item)
 
 			this.$li=(`<a href="javascript:;" title="`+this.item.title+`">
 	            			<li>

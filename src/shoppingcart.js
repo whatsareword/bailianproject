@@ -1,71 +1,77 @@
-define(["jquery","cookie"],function(){
-
+define(["jquery","cookie"],function($){
 	function Shopping(){
 
 	}
 	Shopping.prototype = {
 		constructor:Shopping,
 		init:function(ele){
-			ele.on("click",$.proxy(this.set_shop_time,this))
-		},
-		set_shop_time:function(e){
-			var data_id = $(e.target).attr("data_id");
-			//console.log(data_id)
+			ele.on("click",$.proxy(this.set_shop_itme,this))
 
-			// 如果有cookie这个结构，点击相同的购物车使其数量自增
-			if ($.cookie("shop_cart")) {
-				var scookie = $.cookie("shop_cart");
+		},
+		set_shop_itme:function(e){
+			var dataId = $(e.target).attr("data-id");
+			if($.cookie("shopping_car")){
+				//增加一个值;
+				var scookie = $.cookie("shopping_car");
 				var acookie = JSON.parse(scookie);
-				var flag = false;
-				acookie.forEach(function(item){
-					if(item.id == data_id){
-						item.num ++ ;
+				var flag = false;//代表是否存在数据;
+				acookie.forEach(function(item){	
+					if(item.id == dataId){
+						//证明存在; ==> 数量自增;
+						item.num++;
 						flag = true;
 					}
 				})
-				// 如果是第一次点击就在cookie结构第一次添加这个数据
-				if (!flag) {
+				if(!flag){
 					var item = {
-						"id":data_id,
-						"num":1
+						"id":dataId,
+						"num":"1"
 					}
 					acookie.push(item);
 				}
 				scookie = JSON.stringify(acookie);
-				$.cookie("shop_cart",scookie);
-				
-				//如果没有cookie，就建议一个cookie
-			}else {
-				$.cookie("shop_cart",'[{"id":" '+data_id+ '","num":1}]')
-			}
-			console.log(this.get_shop_item())
-			this.getCartSum();
-			
-		},
-		getCartSum:function(){
-			if (!$.cookie("shop_cart")) {
-				return 0 ;
-			}
-			var acookie = JSON.parse($.cookie("shop_cart"));
-			var sum = 0 ;
-			for(var i in acookie){
-				sum += parseInt(acookie[i].num)
-			}
+				$.cookie("shopping_car",scookie);
 
-				$(".shopCart").html("共购物"+ sum)
-		},
+			}else{
+				//建立一个结构;
+				$.cookie("shopping_car",'[{"id":"'+dataId+'","num":"1"}]')
+			}
+			console.log(this.get_shop_item());
+			this.getCarSum()
+
+		},	
 		get_shop_item:function(){
-			if ($.cookie("shop_cart")) {
-				return JSON.parse($.cookie("shop_cart"))
+			if($.cookie("shopping_car")){
+				return JSON.parse($.cookie("shopping_car"))
 			}
 		},
-		remove_shop_item:function(){
-			
-		}
-
+		remove_shop_item:function(id){
+			var scookie = $.cookie("shopping_car");
+			if(scookie){
+				var acookie = JSON.parse(scookie);
+				/*bug** */
+				acookie.forEach(function(item,index){
+					if(item.id == id){
+						acookie.splice(index,1);
+					}
+				})
+			}
+			scookie = JSON.stringify(acookie);
+			$.cookie("shopping_car",scookie);
+		},
+		getCarSum:function(){
+			if(!$.cookie("shopping_car")){
+				return 0;
+			}
+			var aCookie = JSON.parse($.cookie("shopping_car"));
+			var sum = 0;
+			for(var i in aCookie){
+				sum += parseInt(aCookie[i].num) ;	
+			}
+			$(".shopcar").find("b").html(sum);
+		}		
 	}
 
-	return new Shopping();
-
+	return new Shopping()
 
 })

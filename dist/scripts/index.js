@@ -1,7 +1,7 @@
 require(["scripts/config.js"],function(){
-	require(["jquery","biglist","hotwords","underhotwords","supperBanner","bannerRight","valueGroup","picMagnify","Search","suspensBar"],function($,bigList,hots,underhots,supperbanner,bannerright,vagroup,picmagnify,search,suspensbar){
+	require(["jquery","biglist","hotwords","underhotwords","bannerRight","valueGroup","picMagnify","Search","suspensBar","supperBanner"],function($,bigList,hots,underhots,bannerright,vagroup,picmagnify,search,suspensbar,supper){
 
-		
+
 		$(".left-biglist-show .menu_floor ").find("a").attr("href","goodslist.html");
 							
 		//鼠标滑过li时让left-biglist-show>li的display:block
@@ -37,17 +37,31 @@ require(["scripts/config.js"],function(){
 
 
 		//广告栏
-		// $("#ad-top").find("a").on("click",function(){
-		// 	$("#ad-top").remove();
-		// })
+		$("#advertisement").find("i").on("click",function(){
+			$("#advertisement").remove();
+		})
 
-		
-		let url1="http://dc2.bl.com/js/mdata/banner.html?callback=?&_=1515850451286";
-			$.getJSON(url1,function(res){
-				$(".rollbanner").html(res.message);
-				$(".rollbanner li").find("a").attr("href","#javascript");
-				supperbanner.init($(".rollbanner").find('li'))
-		});
+		//轮播图
+				var a = new supper()
+				a.init({
+					src:[
+						["http://img22.iblimg.com/market-2/images/activity/2005112880.jpg","#fa7c6a"],
+						["http://img22.iblimg.com/market-2/images/activity/210989.jpg","#e8e8e9"],
+						["http://img23.iblimg.com/market-2/images/activity/945600542.jpg","#f7b857"],
+						["http://img22.iblimg.com/market-2/images/activity/81045408.jpg","#fd819e"],
+						["http://img23.iblimg.com/market-2/images/activity/1820331676.jpg","#f798df"],
+						["http://img22.iblimg.com/market-2/images/activity/431191657.jpg","#ff89bb"],
+						["http://img22.iblimg.com/market-2/images/activity/1604534225.jpg","#d8a26d"],
+						["http://img23.iblimg.com/market-2/images/activity/1182393089.jpg","#ff9aa8"]
+					],
+					create_btn:true,
+					movement_mode:"fade",
+					autoplay:true
+				},$("#banner .banner-center"));
+
+
+
+
 
 
 		// 超值团	
@@ -78,6 +92,10 @@ require(["scripts/config.js"],function(){
 					
 					$(floor_name).html(res.message);
 					$(floor_name).find("a").attr("href","#javascript");
+
+
+
+
 				})
 			})
 
@@ -86,6 +104,15 @@ require(["scripts/config.js"],function(){
 			$.getJSON(url4,function(res){
 				//console.log(res.message)
 				 $("#stairs").html(res.message);
+				  var aSection = $(".floor");
+    
+    
+    			
+    
+
+
+
+
 				 
 			})
 

@@ -183,6 +183,22 @@ body{
 		}
 	}
 }
+.register-button {
+    padding-left: 134px;
+    height: 36px;
+    overflow: hidden;
+    .btn-primary {
+	    color: #ffffff;
+	    background: #e6133c;
+	    font-size: 16px;
+	    height: 36px;
+	    border-radius: 2px;
+	    -moz-border-radius: 2px;
+	    -webkit-border-radius: 2px;
+	    width: 300px;
+    	margin-left: 6px;
+	}
+}
 
 
 

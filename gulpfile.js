@@ -38,7 +38,7 @@ gulp.task("script",()=>{
 gulp.task("watch",()=>{
 	gulp.watch(["**/*.html","!module/**/*"],["html"]);
 	gulp.watch(["*/*.js","!module/**/*","libs/**/*","!es6/*"],["script"]);
-	gulp.watch(["es6/*.js","!module/**/*"],["es6"]);
+	gulp.watch(["es6/*.js","!module/**/*","libs/**/*"],["es6"]);
 	gulp.watch(["images/**/*"],["images"]);
 	gulp.watch(["scss/*.scss"],["sass"]);
 })

@@ -12,9 +12,11 @@ define(["jquery"], function($) {
             this.yanz=$("#yanz");
             this.read=$("#read");
             this.enroll=$("#enroll");
-            this.userM=$("#userM");
+           this.userM=$("#userM");
             this.passPrompt=$("#passPrompt");
             this.wordPrompt=$("#wordPrompt");
+
+            
             //console.log(this.username[0])
             //账户名input事件及获得焦点失去焦点的提示信息
             this.username.on("blur",$.proxy(this.downUserName,this));
@@ -49,8 +51,10 @@ define(["jquery"], function($) {
                // console.log(nameVal)
                 var nameReg = /^1[34578]\d{9}$/;
                 if(nameReg.test(nameVal)){
-                    $(_this.username).siblings().css("display","block");
-                    $(_this.username).parent().css("border","1px solid green");
+                    $(_this.username).parent().css({
+                        border:"1px solid green",
+                        boxShadow: "0px 0px 3px green"
+                    });
                     $(_this.username).parent().parent().children().last().css("display","none");
                     $(_this.username).parent().parent().children().last().css("color","#666666")
                     _this.flagName=true;
@@ -72,7 +76,7 @@ define(["jquery"], function($) {
 				var ptwo = ((/[0-9]/g).test(passVal)) ? 1 : 0;
 				var pthree = ((/[A-Z]/g).test(passVal)) ? 1 : 0;
                 var strength = pone + ptwo + pthree;
-                // /console.log(passVal) 
+                console.log(passVal) 
 
                 if(passVal.length>5){//大于6位进行密码 强度判断
                     if(strength==1){
@@ -143,3 +147,4 @@ define(["jquery"], function($) {
     }
     return new Register();
 })
+

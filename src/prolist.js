@@ -46,11 +46,14 @@ define(["jquery"],function($){
 			
 			this.res= JSON.parse(res);
 			this.resthirty=this.res.slice(0,30)
+			clearTimeout(this.timer);
+			
 			
 			this.resthirty.forEach(this.picergodic.bind(this))
 			
 		},
-		picergodic:function(item){
+		picergodic:function(item,index){
+
 			this.item=item;
 			this.$li=$('<li>'+
 					'<div class="pro-show">'+
@@ -90,7 +93,7 @@ define(["jquery"],function($){
 		                    '百联自营</div>'+
 						'</div>'+
 						'<div class="probtn">'+
-							'<button type="button" class="btn btn-primary addCard">加入购物车</button>'+
+							'<button type="button" class="btn btn-primary addCard" data-id="'+index+'">加入购物车</button>'+
 						'</div>'+
 					'</div>'+
 				'</li>')
@@ -103,6 +106,7 @@ define(["jquery"],function($){
 			this.imgArr=[];
 			this.imgArr[this.i]=this.res.slice(this.i * 50,(this.i + 1) * 50) ;
 			this.$ul.html("");
+			var index = (this.i * 50)+$(this.target).index()
 				for(var j = 0;j<this.imgArr[this.i].length;j++){
 					this.$ul[0].innerHTML += '<li>'+
 					'<div class="pro-show">'+
@@ -142,7 +146,7 @@ define(["jquery"],function($){
 		                    '百联自营</div>'+
 						'</div>'+
 						'<div class="probtn">'+
-							'<button type="button" class="btn btn-primary addCard">加入购物车</button>'+
+							'<button type="button" class="btn btn-primary addCard" data-id="'+index+'">加入购物车</button>'+
 						'</div>'+
 					'</div>'+
 				'</li>';
